@@ -193,7 +193,7 @@ def api_token():
         db.session.commit()
         return {"token": newTokenValue}
     else:
-        return {"nextTimeAllowed": str(GLOBAL_TIME_BETWEEN_SUBMISSIONS - (timestamp - int(user_lastSubmitTime)))}
+        return {"nextTimeAllowed": str(GLOBAL_TIME_BETWEEN_SUBMISSIONS + int(user_lastSubmitTime))}
 
 ################################################################################
 
