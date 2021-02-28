@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block cssSheets %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/components/form_submitPixel.css')}}">
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script src="{{url_for('static', filename='js/index/index.js')}}"></script>
+{% endblock %}
+
+{% block title %}
+    2b2t.Place
+{% endblock %}
+
+{% block mainDivContent %}
+    <p>2b2t.Place</p>
+    {% include "components/form_submitPixel.html" %}
+{% endblock %}

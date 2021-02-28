@@ -1,0 +1,15 @@
+#form_submitPixel {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    outline: solid 0.1rem var(--foregroundBlack);
+    padding: 0.3rem;
+}
+
+#fsp_anonymise {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+}
