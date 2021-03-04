@@ -5,6 +5,5 @@ __pycache__/
 /run.sh
 *.service
 *.sock
-secret_key_api.json
-secret_key_app.json
+/config_private.json
 database.sqlite3

@@ -7,29 +7,17 @@ from flask import Flask, redirect, url_for, render_template, request, session, f
 from flask_sqlalchemy import SQLAlchemy
 from wtforms import validators, Form, StringField, RadioField, SelectField
 
+try:
+    with open("./config_private.json") as config_private_file:
+        GLOBAL_CONFIG_PRIVATE = json.load(config_private_file)
+except FileNotFoundError:
+    print("Error: File './config_private.json' not found")
+    raise SystemExit
+
 app = Flask(__name__)
-try:
-    with open("./secret_key_app.json") as secret_key_app_file:
-        app.secret_key = json.load(secret_key_app_file)["key"] # TODO consider changing to environment variables
-except FileNotFoundError:
-    print("Error: File './secret_key_app.json' not found")
-    raise SystemExit
-try:
-    with open("./secret_key_api.json") as secret_key_api_file:
-        GLOBAL_SECRET_KEY_API = json.load(secret_key_api_file)["key"]
-except FileNotFoundError:
-    print("Error: File './secret_key_api.json' not found")
-    raise SystemExit
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.sqlite3"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///{}".format(GLOBAL_CONFIG_PRIVATE["databaseURI"])
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-
-GLOBAL_TIME_BETWEEN_SUBMISSIONS = 86400 # seconds
-GLOBAL_TOKEN_LENGTH = 16 # kept constant
-
-# @app.before_request # TODO Make sure this is enabled on deployment!
-# def force_https():
-#     if not request.is_secure:
-#         return redirect(request.url.replace('http://', 'https://'))
+app.secret_key = GLOBAL_CONFIG_PRIVATE["secretKey_App"]
 
 db = SQLAlchemy(app)
 
@@ -68,7 +56,7 @@ class ActiveToken(db.Model):
     __tablename__ = "ACTIVETOKEN"
     id            = db.Column(db.Integer, primary_key = True)
     userId        = db.Column(db.Integer, db.ForeignKey("USER.id"), nullable = False)
-    tokenValue    = db.Column(db.String(GLOBAL_TOKEN_LENGTH), nullable = False)
+    tokenValue    = db.Column(db.String(GLOBAL_CONFIG_PRIVATE["tokenLength"]), nullable = False)
 
     user          = db.relationship("User", back_populates = "activeToken", uselist = False)
 
@@ -76,7 +64,7 @@ class ActiveToken(db.Model):
 class Form_SubmitPixel(Form):
     fsp_auth_token = StringField(validators = [
         validators.InputRequired(message = "Please enter a token, obtained in the Discord"),
-        validators.Length(message = "Token has length {}".format(GLOBAL_TOKEN_LENGTH), min = GLOBAL_TOKEN_LENGTH, max = GLOBAL_TOKEN_LENGTH),
+        validators.Length(message = "Token has length {}".format(GLOBAL_CONFIG_PRIVATE["tokenLength"]), min = GLOBAL_CONFIG_PRIVATE["tokenLength"], max = GLOBAL_CONFIG_PRIVATE["tokenLength"]),
         validators.Regexp("^[0-9a-fA-F]+$", message = "Token is a hex string")],
         render_kw = {"placeholder": "Token"}
     )
@@ -171,11 +159,11 @@ def index():
 @app.route("/api/token.json")
 def api_token():
     authKey = request.headers.get("authKey")
-    if authKey != GLOBAL_SECRET_KEY_API:
+    if authKey != GLOBAL_CONFIG_PRIVATE["secretKey_API"]:
         return abort(401)
     discordUUID = request.headers.get("discordUUID")
     discordTag = request.headers.get("discordTag")
-    if (discordUUID is None) or (discordTag is None):
+    if (discordUUID is None) or (discordTag is None) or (not isinstance(discordUUID, str)) or (not isinstance(discordTag, str)):
         return abort(400)
     if not (user_byUUID := User.query.filter_by(discordUUID = discordUUID).first()):
         user_byUUID = User(discordUUID = discordUUID, discordTag = discordTag)
@@ -187,13 +175,13 @@ def api_token():
     timestamp = int(time())
     if (user_token := user_byUUID.activeToken):
         return {"token": user_token.tokenValue}
-    elif ((user_lastSubmitTime := user_byUUID.lastSubmitTime) is None) or ((timestamp - int(user_lastSubmitTime)) >= GLOBAL_TIME_BETWEEN_SUBMISSIONS):
-        newTokenValue = ("%0{}x".format(GLOBAL_TOKEN_LENGTH) % random.randrange(16 ** GLOBAL_TOKEN_LENGTH)).upper()
+    elif ((user_lastSubmitTime := user_byUUID.lastSubmitTime) is None) or ((timestamp - int(user_lastSubmitTime)) >= GLOBAL_CONFIG_PRIVATE["timeBetweenSubmissions"]):
+        newTokenValue = ("%0{}x".format(GLOBAL_CONFIG_PRIVATE["tokenLength"]) % random.randrange(16 ** GLOBAL_CONFIG_PRIVATE["tokenLength"])).upper()
         user_byUUID.activeToken = ActiveToken(tokenValue = newTokenValue)
         db.session.commit()
         return {"token": newTokenValue}
     else:
-        return {"nextTimeAllowed": str(GLOBAL_TIME_BETWEEN_SUBMISSIONS + int(user_lastSubmitTime))}
+        return {"nextTimeAllowed": str(GLOBAL_CONFIG_PRIVATE["timeBetweenSubmissions"] + int(user_lastSubmitTime))}
 
 ################################################################################
 
@@ -202,7 +190,8 @@ def initialiseDatabaseIfNecessary():
         db.session.bulk_save_objects([Pixel(x = x, y = y) for x in range(128) for y in range(128)])
         db.session.commit()
 
+db.create_all()
+initialiseDatabaseIfNecessary()
+
 if __name__ == "__main__":
-    db.create_all()
-    initialiseDatabaseIfNecessary()
     app.run(debug = True)

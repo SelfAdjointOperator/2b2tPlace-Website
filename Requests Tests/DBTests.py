@@ -2,8 +2,8 @@ import requests
 import json
 
 if __name__ == "__main__":
-    with open ("./secret_key_api.json") as f:
-        authKey = json.load(f)["key"]
+    with open ("./config_private.json") as f:
+        authKey = json.load(f)["secretKey_API"]
     r = requests.get("http://127.0.0.1:5000/api/token.json",
         headers = {
             "authKey": authKey,
