@@ -1,0 +1,109 @@
+:root {
+    --backgroundWhite:           #F8F8F8;
+    --flashDivWhite:             #F8F8F8AA;
+    --backgroundGradientEndGrey: #CCCCCC;
+    --foregroundBlack:           #181818;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(to bottom, var(--backgroundWhite), var(--backgroundGradientEndGrey));
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--foregroundBlack);
+    text-align: center;
+    overflow: hidden;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    /* user-drag: none; */
+    vertical-align: middle;
+}
+
+button {
+    color: var(--foregroundBlack)
+}
+
+h1, h3, label {
+    font-weight: lighter;
+}
+
+.profilePicture {
+    height: 3rem;
+    width: 3rem;
+}
+
+#titleAndNavDiv {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titleText {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#nav * {
+    margin-left: 0.3rem;
+}
+
+#mainDiv {
+    flex: 1;
+    margin: 0.3rem;
+    outline: solid 0.1rem var(--foregroundBlack);
+}
+
+#footerDiv .pagination {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+    outline: solid 0.1rem var(--foregroundBlack);
+    padding: 0.3rem;
+}
+
+#flashDiv {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--flashDivWhite);
+}
+
+#flashDivInner {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--backgroundWhite);
+    margin: 0.3rem;
+    outline: solid 0.1rem var(--foregroundBlack);
+}
+
+#flashDivInner * {
+    padding: 0.3rem;
+}

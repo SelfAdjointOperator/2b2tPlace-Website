@@ -1,7 +1,7 @@
-# SAO Template
+# 2b2tPlace-Website
 
-This is my template repository
+This repo contains the source code of the website [2b2t.Place](https://2b2t.Place). The repo containing the source code of the corresponding Discord bot can be found [here](https://github.com/SelfAdjointOperator/2b2tPlace-DiscordBot).
 
-## H2 Headings like this
+Inspired by [r/place](https://www.reddit.com/r/place/) and [MapartCraft](https://rebane2001.com/mapartcraft/)
 
-- Bullet points
+# WIP

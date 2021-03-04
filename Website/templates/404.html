@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block cssSheets %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/404.css')}}">
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+{% endblock %}
+
+{% block title %}
+    2b2t.Place - 404
+{% endblock %}
+
+{% block mainDivContent %}
+    <h1>
+        404
+    </h1>
+{% endblock %}

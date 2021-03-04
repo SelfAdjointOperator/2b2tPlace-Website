@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block cssSheets %}
+        <link rel="stylesheet" href="{{url_for('static', filename='styles/base.css')}}">
+    {% endblock %}
+    {% block scripts %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{{url_for('static', filename='js/base.js')}}"></script>
+    {% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="icon" type="icon" href="{{url_for('static', filename='images/favicon.ico')}}" />
+</head>
+
+<body>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div id="flashDiv">
+                <div id="flashDivInner">
+                    {% for message in messages %}
+                        <p>{{message}}</p>
+                    {% endfor %}
+                    <button id="flashDivButton" onclick="setElementDisplay('flashDiv', 'none')">OK</button>
+                </div>
+            </div>
+        {% endif %}
+    {% endwith %}
+    <div id="titleAndNavDiv">
+        <h1 id="titleText">
+            2b2t.Place
+        </h1>
+        <nav id="nav">
+            <a href="{{url_for('index')}}">
+                Home
+            </a>
+            <a href="https://github.com/SelfAdjointOperator">
+                GitHub
+            </a>
+        </nav>
+    </div>
+    <div id="mainDiv">
+        {% block mainDivContent %}
+        {% endblock %}
+    </div>
+</body>
+
+</html>

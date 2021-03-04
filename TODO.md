@@ -1,1 +1,5 @@
-Everything
+- ## Plenty of TODOs in \_\_init\_\_.py
+- Implement colour selection
+- Implement map display
+- (Implement whole main.js)
+- Setup.py possibly, though I can never get it to install the right module versions in the right order
