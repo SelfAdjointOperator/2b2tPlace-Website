@@ -1,7 +1,10 @@
 gitignore Extras/
 __pycache__/
 /venv
+/logs
 /run.sh
+*.service
+*.sock
 secret_key_api.json
 secret_key_app.json
 database.sqlite3
