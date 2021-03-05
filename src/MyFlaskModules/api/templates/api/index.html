@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block cssSheets %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('.static',filename='styles/index.css')}}">
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+{% endblock %}
+
+{% block title %}
+    2b2t.Place - API
+{% endblock %}
+
+{% block mainDivContent %}
+    <p>2b2t.Place API</p>
+{% endblock %}

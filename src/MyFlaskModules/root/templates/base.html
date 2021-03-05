@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% block cssSheets %}
-        <link rel="stylesheet" href="{{url_for('static', filename='styles/base.css')}}">
+        <link rel="stylesheet" href="{{url_for('root.static',filename='styles/base.css')}}">
     {% endblock %}
     {% block scripts %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="{{url_for('static', filename='js/base.js')}}"></script>
+        <script src="{{url_for('root.static',filename='js/base.js')}}"></script>
     {% endblock %}
     <title>{% block title %}{% endblock %}</title>
-    <link rel="icon" type="icon" href="{{url_for('static', filename='images/favicon.ico')}}" />
+    <link rel="icon" type="icon" href="{{url_for('root.static',filename='images/favicon.ico')}}" />
 </head>
 
 <body>
@@ -33,8 +33,11 @@
             2b2t.Place
         </h1>
         <nav id="nav">
-            <a href="{{url_for('index')}}">
+            <a href="{{url_for('root.index')}}">
                 Home
+            </a>
+            <a href="{{url_for('api.index')}}">
+                API
             </a>
             <a href="https://github.com/SelfAdjointOperator">
                 GitHub

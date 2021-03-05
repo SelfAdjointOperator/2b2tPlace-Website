@@ -1,0 +1,1 @@
+from .. import GLOBAL_CONFIG as MODULE_CONFIG

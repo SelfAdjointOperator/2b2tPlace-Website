@@ -5,5 +5,5 @@ __pycache__/
 /run.sh
 *.service
 *.sock
-/config_private.json
-database.sqlite3
+/config.json
+/database.sqlite3

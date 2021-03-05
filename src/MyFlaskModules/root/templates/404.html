@@ -2,7 +2,7 @@
 
 {% block cssSheets %}
     {{ super() }}
-    <link rel="stylesheet" href="{{url_for('static',filename='styles/404.css')}}">
+    <link rel="stylesheet" href="{{url_for('root.static',filename='styles/404.css')}}">
 {% endblock %}
 
 {% block scripts %}
