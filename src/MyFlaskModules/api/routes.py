@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template, url_for, request, abort
+from sqlalchemy import and_
 from time import time
 import random
 import json
@@ -13,16 +14,23 @@ bp = Blueprint("api",
     url_prefix = "/api"
 )
 
+def requiresAuthKey(function):
+    """Decorator for admin / Discord bot methods"""
+    def decorated(*args, **kwargs):
+        authKey = request.headers.get("authKey")
+        if authKey != MODULE_CONFIG["secretKey_API"]:
+            return abort(401)
+        return function(*args, **kwargs)
+    decorated.__name__ = function.__name__
+    return decorated
+
 @bp.route("/")
 def index():
     return render_template("api/index.html")
 
-@bp.route("/token.json")
-def api_token():
-    # TODO decorator for routes that require authKey
-    authKey = request.headers.get("authKey")
-    if authKey != MODULE_CONFIG["secretKey_API"]:
-        return abort(401)
+@bp.route("/admin/token.json")
+@requiresAuthKey
+def admin_token():
     discordUUID = request.headers.get("discordUUID")
     discordTag = request.headers.get("discordTag")
     if (discordUUID is None) or (discordTag is None) or (not isinstance(discordUUID, str)) or (not isinstance(discordTag, str)):
@@ -45,4 +53,70 @@ def api_token():
     else:
         return json.dumps({"nextTimeAllowed": str(MODULE_CONFIG["timeBetweenSubmissions"] + int(user_lastSubmitTime))})
 
-# TODO more routes for json files for main js app to load
+@bp.route("/pixels.json")
+def pixels():
+    """Fetch current state of all pixels"""
+    pixels_JSON = [{
+        "x": pixel.x,
+        "y": pixel.y,
+        "colourId": pixel.colourId,
+        "activityCount": pixel.activityCount
+    } for pixel in Pixel.query.all()]
+    return json.dumps(pixels_JSON)
+
+@bp.route("/history.json")
+def history():
+    """Fetch history about a range of space or time, or history from a user
+    URL query parameter groups: (userId), (timeFrom), (timeTo), (xFrom, xTo, yFrom, yTo)"""
+
+    q = PixelHistory.query
+
+    try:
+        userId = int(request.args.get("userId"))
+        q = q.join(User).filter(User.id == userId)
+    except:
+        pass
+
+    try:
+        timeFrom = int(request.args.get("timeFrom"))
+        q = q.filter(PixelHistory.timestamp >= timeFrom)
+    except:
+        pass
+
+    try:
+        timeTo = int(request.args.get("timeTo"))
+        q = q.filter(PixelHistory.timestamp <= timeTo)
+    except:
+        pass
+
+    try:
+        xFrom = int(request.args.get("xFrom"))
+        xTo   = int(request.args.get("xTo"))
+        yFrom = int(request.args.get("yFrom"))
+        yTo   = int(request.args.get("yTo"))
+        q = q.join(Pixel).filter(
+            and_(
+                Pixel.x >= xFrom,
+                Pixel.x <= xTo,
+                Pixel.y >= yFrom,
+                Pixel.y <= yTo
+            )
+        )
+    except:
+        pass
+
+    historyEntries = q.order_by(
+        PixelHistory.id.desc()
+    ).all()
+
+    returnJSON = [{
+        "historyId": historyEntry.id,
+        "x": historyEntry.pixel.x,
+        "y": historyEntry.pixel.y,
+        "oldColourId": historyEntry.oldColourId,
+        "colourId": historyEntry.colourId,
+        "timestamp": historyEntry.timestamp,
+        "userId": historyEntry.userId,
+        "userDiscordTag": historyEntry.user.discordTag
+    } for historyEntry in historyEntries]
+    return json.dumps(returnJSON)
