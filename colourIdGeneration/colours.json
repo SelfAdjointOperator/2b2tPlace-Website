@@ -1,0 +1,2306 @@
+{
+    "0": {
+        "tones": {
+            "dark": "#597D27",
+            "normal": "#6D9930",
+            "light": "#7FB238"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Grass Block",
+                "filename": "grass_side.png",
+                "blockId": {
+                    "dark": "2829185",
+                    "normal": "8949078",
+                    "light": "8491889"
+                }
+            },
+            "1": {
+                "blockName": "Slime Block",
+                "filename": "slime.png",
+                "blockId": {
+                    "dark": "4923523",
+                    "normal": "8125719",
+                    "light": "4441044"
+                }
+            }
+        }
+    },
+    "1": {
+        "tones": {
+            "dark": "#AEA473",
+            "normal": "#D5C98C",
+            "light": "#F7E9A3"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Sand",
+                "filename": "sand.png",
+                "blockId": {
+                    "dark": "16604166",
+                    "normal": "14901923",
+                    "light": "1637790"
+                }
+            },
+            "1": {
+                "blockName": "Sandstone",
+                "filename": "sandstone_normal.png",
+                "blockId": {
+                    "dark": "5227244",
+                    "normal": "16586371",
+                    "light": "10264628"
+                }
+            },
+            "2": {
+                "blockName": "Sandstone Slab",
+                "filename": "sandstone_slab.png",
+                "blockId": {
+                    "dark": "8726767",
+                    "normal": "13438801",
+                    "light": "134417"
+                }
+            },
+            "3": {
+                "blockName": "Birch Log (Vertical)",
+                "filename": "log_birch_top.png",
+                "blockId": {
+                    "dark": "577152",
+                    "normal": "14986323",
+                    "light": "2235422"
+                }
+            },
+            "4": {
+                "blockName": "Birch Planks",
+                "filename": "planks_birch.png",
+                "blockId": {
+                    "dark": "2334125",
+                    "normal": "9849935",
+                    "light": "15759093"
+                }
+            },
+            "5": {
+                "blockName": "Birch Slab",
+                "filename": "slabs_birch.png",
+                "blockId": {
+                    "dark": "1315382",
+                    "normal": "16186902",
+                    "light": "3886889"
+                }
+            },
+            "6": {
+                "blockName": "Glowstone",
+                "filename": "glowstone.png",
+                "blockId": {
+                    "dark": "4800305",
+                    "normal": "6409425",
+                    "light": "2009462"
+                }
+            },
+            "7": {
+                "blockName": "End Stone",
+                "filename": "end_stone.png",
+                "blockId": {
+                    "dark": "12932337",
+                    "normal": "12370494",
+                    "light": "5929320"
+                }
+            }
+        }
+    },
+    "2": {
+        "tones": {
+            "dark": "#8C8C8C",
+            "normal": "#ABABAB",
+            "light": "#C7C7C7"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Cobweb",
+                "filename": "web.png",
+                "blockId": {
+                    "dark": "1544130",
+                    "normal": "16398976",
+                    "light": "552701"
+                }
+            }
+        }
+    },
+    "3": {
+        "tones": {
+            "dark": "#B40000",
+            "normal": "#DC0000",
+            "light": "#FF0000"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "TNT",
+                "filename": "tnt_side.png",
+                "blockId": {
+                    "dark": "1192965",
+                    "normal": "1832111",
+                    "light": "7794368"
+                }
+            },
+            "1": {
+                "blockName": "Block Of Redstone",
+                "filename": "redstone_block.png",
+                "blockId": {
+                    "dark": "8337175",
+                    "normal": "8949958",
+                    "light": "13412864"
+                }
+            }
+        }
+    },
+    "4": {
+        "tones": {
+            "dark": "#7070B4",
+            "normal": "#8A8ADC",
+            "light": "#A0A0FF"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Ice",
+                "filename": "ice.png",
+                "blockId": {
+                    "dark": "10859666",
+                    "normal": "2081106",
+                    "light": "9504377"
+                }
+            },
+            "1": {
+                "blockName": "Packed Ice",
+                "filename": "ice_packed.png",
+                "blockId": {
+                    "dark": "808798",
+                    "normal": "9956661",
+                    "light": "8707010"
+                }
+            }
+        }
+    },
+    "5": {
+        "tones": {
+            "dark": "#757575",
+            "normal": "#909090",
+            "light": "#A7A7A7"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Block Of Iron",
+                "filename": "iron_block.png",
+                "blockId": {
+                    "dark": "12790768",
+                    "normal": "6603813",
+                    "light": "8236447"
+                }
+            },
+            "1": {
+                "blockName": "Iron Trapdoor",
+                "filename": "iron_trapdoor.png",
+                "blockId": {
+                    "dark": "10709665",
+                    "normal": "3395596",
+                    "light": "16534341"
+                }
+            },
+            "2": {
+                "blockName": "Iron Bars",
+                "filename": "iron_bars.png",
+                "blockId": {
+                    "dark": "15453190",
+                    "normal": "186244",
+                    "light": "8665813"
+                }
+            },
+            "3": {
+                "blockName": "Weighted Pressure Plate (Heavy)",
+                "filename": "heavy_weighted_pressure_plate.png",
+                "blockId": {
+                    "dark": "10361598",
+                    "normal": "5794271",
+                    "light": "4857332"
+                }
+            }
+        }
+    },
+    "6": {
+        "tones": {
+            "dark": "#005700",
+            "normal": "#006A00",
+            "light": "#007C00"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Leaves (Oak)",
+                "filename": "leaves.png",
+                "blockId": {
+                    "dark": "9515538",
+                    "normal": "14006275",
+                    "light": "6712828"
+                }
+            },
+            "1": {
+                "blockName": "Leaves (Spruce)",
+                "filename": "leaves.png",
+                "blockId": {
+                    "dark": "2842147",
+                    "normal": "16059874",
+                    "light": "13166900"
+                }
+            },
+            "2": {
+                "blockName": "Leaves (Birch)",
+                "filename": "leaves.png",
+                "blockId": {
+                    "dark": "15157071",
+                    "normal": "4354509",
+                    "light": "11989027"
+                }
+            },
+            "3": {
+                "blockName": "Leaves (Jungle)",
+                "filename": "leaves.png",
+                "blockId": {
+                    "dark": "10625810",
+                    "normal": "10933230",
+                    "light": "4388504"
+                }
+            },
+            "4": {
+                "blockName": "Leaves (Acacia)",
+                "filename": "leaves.png",
+                "blockId": {
+                    "dark": "14057988",
+                    "normal": "4252340",
+                    "light": "14276058"
+                }
+            },
+            "5": {
+                "blockName": "Leaves (Dark Oak)",
+                "filename": "leaves.png",
+                "blockId": {
+                    "dark": "15661379",
+                    "normal": "2090043",
+                    "light": "3102925"
+                }
+            }
+        }
+    },
+    "7": {
+        "tones": {
+            "dark": "#737681",
+            "normal": "#8D909E",
+            "light": "#A4A8B8"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Clay",
+                "filename": "clay.png",
+                "blockId": {
+                    "dark": "8459021",
+                    "normal": "3708623",
+                    "light": "16121140"
+                }
+            }
+        }
+    },
+    "8": {
+        "tones": {
+            "dark": "#6A4C36",
+            "normal": "#825E42",
+            "light": "#976D4D"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Jungle Log (Vertical)",
+                "filename": "log_jungle_top.png",
+                "blockId": {
+                    "dark": "9014137",
+                    "normal": "9402032",
+                    "light": "7248704"
+                }
+            },
+            "1": {
+                "blockName": "Jungle Planks",
+                "filename": "planks_jungle.png",
+                "blockId": {
+                    "dark": "560165",
+                    "normal": "9812707",
+                    "light": "12808897"
+                }
+            },
+            "2": {
+                "blockName": "Jungle Slab",
+                "filename": "slabs_jungle.png",
+                "blockId": {
+                    "dark": "1197778",
+                    "normal": "10276784",
+                    "light": "2295441"
+                }
+            },
+            "3": {
+                "blockName": "Dirt",
+                "filename": "dirt.png",
+                "blockId": {
+                    "dark": "6613784",
+                    "normal": "6140371",
+                    "light": "11144869"
+                }
+            },
+            "4": {
+                "blockName": "Coarse Dirt",
+                "filename": "coarse_dirt.png",
+                "blockId": {
+                    "dark": "1122721",
+                    "normal": "10005548",
+                    "light": "11160813"
+                }
+            },
+            "5": {
+                "blockName": "Jukebox",
+                "filename": "jukebox_top.png",
+                "blockId": {
+                    "dark": "8351728",
+                    "normal": "10486194",
+                    "light": "12836815"
+                }
+            },
+            "6": {
+                "blockName": "Granite",
+                "filename": "stone_granite.png",
+                "blockId": {
+                    "dark": "7823846",
+                    "normal": "8891264",
+                    "light": "672083"
+                }
+            }
+        }
+    },
+    "9": {
+        "tones": {
+            "dark": "#4F4F4F",
+            "normal": "#606060",
+            "light": "#707070"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Cobblestone",
+                "filename": "cobblestone.png",
+                "blockId": {
+                    "dark": "11766932",
+                    "normal": "9443648",
+                    "light": "15549132"
+                }
+            },
+            "1": {
+                "blockName": "Stone",
+                "filename": "stone.png",
+                "blockId": {
+                    "dark": "1265166",
+                    "normal": "16734032",
+                    "light": "14613592"
+                }
+            },
+            "2": {
+                "blockName": "Stone Slab",
+                "filename": "stone_slab.png",
+                "blockId": {
+                    "dark": "16660856",
+                    "normal": "9352092",
+                    "light": "13182175"
+                }
+            },
+            "3": {
+                "blockName": "Cobblestone Slab",
+                "filename": "cobblestone_slab.png",
+                "blockId": {
+                    "dark": "12542730",
+                    "normal": "13983386",
+                    "light": "12807185"
+                }
+            },
+            "4": {
+                "blockName": "Andesite",
+                "filename": "stone_andesite.png",
+                "blockId": {
+                    "dark": "11668240",
+                    "normal": "1060233",
+                    "light": "11068569"
+                }
+            },
+            "5": {
+                "blockName": "Bedrock",
+                "filename": "bedrock.png",
+                "blockId": {
+                    "dark": "12841153",
+                    "normal": "12802186",
+                    "light": "15381796"
+                }
+            },
+            "6": {
+                "blockName": "Acacia Log (Horizontal)",
+                "filename": "log_acacia.png",
+                "blockId": {
+                    "dark": "888202",
+                    "normal": "11629154",
+                    "light": "1009042"
+                }
+            },
+            "7": {
+                "blockName": "Gravel",
+                "filename": "gravel.png",
+                "blockId": {
+                    "dark": "9612413",
+                    "normal": "13603790",
+                    "light": "385859"
+                }
+            }
+        }
+    },
+    "10": {
+        "tones": {
+            "dark": "#2D2DB4",
+            "normal": "#3737DC",
+            "light": "#4040FF"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Water (Unsupported!)",
+                "filename": "water_bucket.png",
+                "blockId": {
+                    "dark": "1453489",
+                    "normal": "1510469",
+                    "light": "7035968"
+                }
+            }
+        }
+    },
+    "11": {
+        "tones": {
+            "dark": "#645432",
+            "normal": "#7B663E",
+            "light": "#8F7748"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Oak Log (Vertical)",
+                "filename": "log_oak_top.png",
+                "blockId": {
+                    "dark": "10958715",
+                    "normal": "12019064",
+                    "light": "2896613"
+                }
+            },
+            "1": {
+                "blockName": "Oak Planks",
+                "filename": "planks_oak.png",
+                "blockId": {
+                    "dark": "10882718",
+                    "normal": "11011415",
+                    "light": "7810730"
+                }
+            },
+            "2": {
+                "blockName": "Oak Slab",
+                "filename": "slabs_oak.png",
+                "blockId": {
+                    "dark": "4197544",
+                    "normal": "9045705",
+                    "light": "5401174"
+                }
+            },
+            "3": {
+                "blockName": "Crafting Table",
+                "filename": "crafting_table_side.png",
+                "blockId": {
+                    "dark": "15538508",
+                    "normal": "6422938",
+                    "light": "10017593"
+                }
+            }
+        }
+    },
+    "12": {
+        "tones": {
+            "dark": "#B4B1AC",
+            "normal": "#DCD9D3",
+            "light": "#FFFCF5"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Birch Log (Horizontal)",
+                "filename": "log_birch.png",
+                "blockId": {
+                    "dark": "10565691",
+                    "normal": "9902582",
+                    "light": "11959157"
+                }
+            },
+            "1": {
+                "blockName": "Diorite",
+                "filename": "stone_diorite.png",
+                "blockId": {
+                    "dark": "10549078",
+                    "normal": "8453251",
+                    "light": "14727834"
+                }
+            },
+            "2": {
+                "blockName": "Quartz Block",
+                "filename": "quartz_block_side.png",
+                "blockId": {
+                    "dark": "15057707",
+                    "normal": "11553239",
+                    "light": "15306000"
+                }
+            },
+            "3": {
+                "blockName": "Quartz Slab",
+                "filename": "quartz_slab.png",
+                "blockId": {
+                    "dark": "486951",
+                    "normal": "8743958",
+                    "light": "3513754"
+                }
+            },
+            "4": {
+                "blockName": "Sea Lantern",
+                "filename": "sea_lantern.png",
+                "blockId": {
+                    "dark": "4415959",
+                    "normal": "15840334",
+                    "light": "8946608"
+                }
+            }
+        }
+    },
+    "13": {
+        "tones": {
+            "dark": "#B4B4B4",
+            "normal": "#DCDCDC",
+            "light": "#FFFFFF"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "White Wool",
+                "filename": "wool_colored_white.png",
+                "blockId": {
+                    "dark": "13521207",
+                    "normal": "15264761",
+                    "light": "4852996"
+                }
+            },
+            "1": {
+                "blockName": "White Carpet",
+                "filename": "carpet_colored_white.png",
+                "blockId": {
+                    "dark": "5959182",
+                    "normal": "7845499",
+                    "light": "13832354"
+                }
+            },
+            "2": {
+                "blockName": "White Stained Glass",
+                "filename": "glass_white.png",
+                "blockId": {
+                    "dark": "7310221",
+                    "normal": "925066",
+                    "light": "15098607"
+                }
+            },
+            "3": {
+                "blockName": "White Concrete",
+                "filename": "concrete_white.png",
+                "blockId": {
+                    "dark": "6915770",
+                    "normal": "5648094",
+                    "light": "5198325"
+                }
+            },
+            "4": {
+                "blockName": "White Concrete Powder",
+                "filename": "concrete_powder_white.png",
+                "blockId": {
+                    "dark": "14266854",
+                    "normal": "8395390",
+                    "light": "493898"
+                }
+            },
+            "5": {
+                "blockName": "White Glazed Terracotta",
+                "filename": "glazed_terracotta_white.png",
+                "blockId": {
+                    "dark": "12341162",
+                    "normal": "7072755",
+                    "light": "2557474"
+                }
+            },
+            "6": {
+                "blockName": "Snow Block",
+                "filename": "snow.png",
+                "blockId": {
+                    "dark": "2257031",
+                    "normal": "8443625",
+                    "light": "9983948"
+                }
+            },
+            "7": {
+                "blockName": "Snow Layer",
+                "filename": "snow_layer.png",
+                "blockId": {
+                    "dark": "12542385",
+                    "normal": "2548627",
+                    "light": "5247952"
+                }
+            }
+        }
+    },
+    "14": {
+        "tones": {
+            "dark": "#985924",
+            "normal": "#BA6D2C",
+            "light": "#D87F33"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Orange Wool",
+                "filename": "wool_colored_orange.png",
+                "blockId": {
+                    "dark": "12050456",
+                    "normal": "10568234",
+                    "light": "9077234"
+                }
+            },
+            "1": {
+                "blockName": "Orange Carpet",
+                "filename": "carpet_colored_orange.png",
+                "blockId": {
+                    "dark": "1611911",
+                    "normal": "13057127",
+                    "light": "4219840"
+                }
+            },
+            "2": {
+                "blockName": "Orange Stained Glass",
+                "filename": "glass_orange.png",
+                "blockId": {
+                    "dark": "9861931",
+                    "normal": "8291329",
+                    "light": "10719568"
+                }
+            },
+            "3": {
+                "blockName": "Orange Concrete",
+                "filename": "concrete_orange.png",
+                "blockId": {
+                    "dark": "3830824",
+                    "normal": "8902795",
+                    "light": "13198986"
+                }
+            },
+            "4": {
+                "blockName": "Orange Concrete Powder",
+                "filename": "concrete_powder_orange.png",
+                "blockId": {
+                    "dark": "5637601",
+                    "normal": "15913179",
+                    "light": "16021695"
+                }
+            },
+            "5": {
+                "blockName": "Orange Glazed Terracotta",
+                "filename": "glazed_terracotta_orange.png",
+                "blockId": {
+                    "dark": "4156998",
+                    "normal": "14012941",
+                    "light": "14221481"
+                }
+            },
+            "6": {
+                "blockName": "Acacia Log (Vertical)",
+                "filename": "log_acacia_top.png",
+                "blockId": {
+                    "dark": "11854578",
+                    "normal": "4744147",
+                    "light": "4359549"
+                }
+            },
+            "7": {
+                "blockName": "Acacia Planks",
+                "filename": "planks_acacia.png",
+                "blockId": {
+                    "dark": "2750815",
+                    "normal": "415103",
+                    "light": "7460671"
+                }
+            },
+            "8": {
+                "blockName": "Acacia Slab",
+                "filename": "slabs_acacia.png",
+                "blockId": {
+                    "dark": "6515287",
+                    "normal": "5851681",
+                    "light": "3095617"
+                }
+            },
+            "9": {
+                "blockName": "Red Sand",
+                "filename": "red_sand.png",
+                "blockId": {
+                    "dark": "1885063",
+                    "normal": "11906892",
+                    "light": "2431097"
+                }
+            },
+            "10": {
+                "blockName": "Red Sandstone",
+                "filename": "red_sandstone_normal.png",
+                "blockId": {
+                    "dark": "8697349",
+                    "normal": "15588670",
+                    "light": "11174743"
+                }
+            },
+            "11": {
+                "blockName": "Terracotta",
+                "filename": "hardened_clay.png",
+                "blockId": {
+                    "dark": "16207194",
+                    "normal": "14627183",
+                    "light": "15504546"
+                }
+            }
+        }
+    },
+    "15": {
+        "tones": {
+            "dark": "#7D3598",
+            "normal": "#9941BA",
+            "light": "#B24CD8"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Magenta Wool",
+                "filename": "wool_colored_magenta.png",
+                "blockId": {
+                    "dark": "13358362",
+                    "normal": "9458492",
+                    "light": "5308469"
+                }
+            },
+            "1": {
+                "blockName": "Magenta Carpet",
+                "filename": "carpet_colored_magenta.png",
+                "blockId": {
+                    "dark": "4168586",
+                    "normal": "8903963",
+                    "light": "4983868"
+                }
+            },
+            "2": {
+                "blockName": "Magenta Stained Glass",
+                "filename": "glass_magenta.png",
+                "blockId": {
+                    "dark": "10073304",
+                    "normal": "14415836",
+                    "light": "789393"
+                }
+            },
+            "3": {
+                "blockName": "Magenta Concrete",
+                "filename": "concrete_magenta.png",
+                "blockId": {
+                    "dark": "2288418",
+                    "normal": "2425543",
+                    "light": "7162857"
+                }
+            },
+            "4": {
+                "blockName": "Magenta Concrete Powder",
+                "filename": "concrete_powder_magenta.png",
+                "blockId": {
+                    "dark": "15222480",
+                    "normal": "3906654",
+                    "light": "1604244"
+                }
+            },
+            "5": {
+                "blockName": "Magenta Glazed Terracotta",
+                "filename": "glazed_terracotta_magenta.png",
+                "blockId": {
+                    "dark": "15019805",
+                    "normal": "3803221",
+                    "light": "1355583"
+                }
+            },
+            "6": {
+                "blockName": "Purpur Block",
+                "filename": "purpur_block.png",
+                "blockId": {
+                    "dark": "14035033",
+                    "normal": "12558419",
+                    "light": "394910"
+                }
+            },
+            "7": {
+                "blockName": "Purpur Slab",
+                "filename": "purpur_slab.png",
+                "blockId": {
+                    "dark": "1871225",
+                    "normal": "6585393",
+                    "light": "13691633"
+                }
+            }
+        }
+    },
+    "16": {
+        "tones": {
+            "dark": "#486C98",
+            "normal": "#5884BA",
+            "light": "#6699D8"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Light Blue Wool",
+                "filename": "wool_colored_light_blue.png",
+                "blockId": {
+                    "dark": "5347238",
+                    "normal": "8412624",
+                    "light": "9287377"
+                }
+            },
+            "1": {
+                "blockName": "Light Blue Carpet",
+                "filename": "carpet_colored_light_blue.png",
+                "blockId": {
+                    "dark": "757742",
+                    "normal": "6083796",
+                    "light": "11446733"
+                }
+            },
+            "2": {
+                "blockName": "Light Blue Stained Glass",
+                "filename": "glass_light_blue.png",
+                "blockId": {
+                    "dark": "15735425",
+                    "normal": "15907442",
+                    "light": "2452417"
+                }
+            },
+            "3": {
+                "blockName": "Light Blue Concrete",
+                "filename": "concrete_light_blue.png",
+                "blockId": {
+                    "dark": "7080537",
+                    "normal": "1930285",
+                    "light": "9369803"
+                }
+            },
+            "4": {
+                "blockName": "Light Blue Concrete Powder",
+                "filename": "concrete_powder_light_blue.png",
+                "blockId": {
+                    "dark": "3969973",
+                    "normal": "8749700",
+                    "light": "10478242"
+                }
+            },
+            "5": {
+                "blockName": "Light Blue Glazed Terracotta",
+                "filename": "glazed_terracotta_light_blue.png",
+                "blockId": {
+                    "dark": "2671132",
+                    "normal": "13689595",
+                    "light": "10026810"
+                }
+            }
+        }
+    },
+    "17": {
+        "tones": {
+            "dark": "#A1A124",
+            "normal": "#C5C52C",
+            "light": "#E5E533"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Yellow Wool",
+                "filename": "wool_colored_yellow.png",
+                "blockId": {
+                    "dark": "9529375",
+                    "normal": "8794666",
+                    "light": "1700782"
+                }
+            },
+            "1": {
+                "blockName": "Yellow Carpet",
+                "filename": "carpet_colored_yellow.png",
+                "blockId": {
+                    "dark": "10524791",
+                    "normal": "15023862",
+                    "light": "16106473"
+                }
+            },
+            "2": {
+                "blockName": "Yellow Stained Glass",
+                "filename": "glass_yellow.png",
+                "blockId": {
+                    "dark": "5332822",
+                    "normal": "11379016",
+                    "light": "164511"
+                }
+            },
+            "3": {
+                "blockName": "Yellow Concrete",
+                "filename": "concrete_yellow.png",
+                "blockId": {
+                    "dark": "1452802",
+                    "normal": "15538289",
+                    "light": "697015"
+                }
+            },
+            "4": {
+                "blockName": "Yellow Concrete Powder",
+                "filename": "concrete_powder_yellow.png",
+                "blockId": {
+                    "dark": "3193994",
+                    "normal": "1103861",
+                    "light": "13024153"
+                }
+            },
+            "5": {
+                "blockName": "Yellow Glazed Terracotta",
+                "filename": "glazed_terracotta_yellow.png",
+                "blockId": {
+                    "dark": "159620",
+                    "normal": "8279103",
+                    "light": "11809289"
+                }
+            },
+            "6": {
+                "blockName": "Hay Bale",
+                "filename": "hay_block_side.png",
+                "blockId": {
+                    "dark": "3758102",
+                    "normal": "8613708",
+                    "light": "11817908"
+                }
+            },
+            "7": {
+                "blockName": "Sponge (Any)",
+                "filename": "sponge.png",
+                "blockId": {
+                    "dark": "16506629",
+                    "normal": "6708383",
+                    "light": "10115209"
+                }
+            }
+        }
+    },
+    "18": {
+        "tones": {
+            "dark": "#599011",
+            "normal": "#6DB015",
+            "light": "#7FCC19"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Lime Wool",
+                "filename": "wool_colored_lime.png",
+                "blockId": {
+                    "dark": "3491353",
+                    "normal": "7399605",
+                    "light": "6627770"
+                }
+            },
+            "1": {
+                "blockName": "Lime Carpet",
+                "filename": "carpet_colored_lime.png",
+                "blockId": {
+                    "dark": "9283636",
+                    "normal": "2696147",
+                    "light": "14136825"
+                }
+            },
+            "2": {
+                "blockName": "Lime Stained Glass",
+                "filename": "glass_lime.png",
+                "blockId": {
+                    "dark": "5867058",
+                    "normal": "15793493",
+                    "light": "11598130"
+                }
+            },
+            "3": {
+                "blockName": "Lime Concrete",
+                "filename": "concrete_lime.png",
+                "blockId": {
+                    "dark": "11175168",
+                    "normal": "16625424",
+                    "light": "5755563"
+                }
+            },
+            "4": {
+                "blockName": "Lime Concrete Powder",
+                "filename": "concrete_powder_lime.png",
+                "blockId": {
+                    "dark": "10267390",
+                    "normal": "11801888",
+                    "light": "14872018"
+                }
+            },
+            "5": {
+                "blockName": "Lime Glazed Terracotta",
+                "filename": "glazed_terracotta_lime.png",
+                "blockId": {
+                    "dark": "10342479",
+                    "normal": "16086152",
+                    "light": "16166458"
+                }
+            },
+            "6": {
+                "blockName": "Melon",
+                "filename": "melon_side.png",
+                "blockId": {
+                    "dark": "470995",
+                    "normal": "4646370",
+                    "light": "8023709"
+                }
+            }
+        }
+    },
+    "19": {
+        "tones": {
+            "dark": "#AA5974",
+            "normal": "#D06D8E",
+            "light": "#F27FA5"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Pink Wool",
+                "filename": "wool_colored_pink.png",
+                "blockId": {
+                    "dark": "13137610",
+                    "normal": "8127617",
+                    "light": "14584597"
+                }
+            },
+            "1": {
+                "blockName": "Pink Carpet",
+                "filename": "carpet_colored_pink.png",
+                "blockId": {
+                    "dark": "14356677",
+                    "normal": "5685594",
+                    "light": "8359002"
+                }
+            },
+            "2": {
+                "blockName": "Pink Stained Glass",
+                "filename": "glass_pink.png",
+                "blockId": {
+                    "dark": "8287627",
+                    "normal": "14701553",
+                    "light": "16015037"
+                }
+            },
+            "3": {
+                "blockName": "Pink Concrete",
+                "filename": "concrete_pink.png",
+                "blockId": {
+                    "dark": "7820465",
+                    "normal": "7473164",
+                    "light": "11688603"
+                }
+            },
+            "4": {
+                "blockName": "Pink Concrete Powder",
+                "filename": "concrete_powder_pink.png",
+                "blockId": {
+                    "dark": "8496026",
+                    "normal": "10227425",
+                    "light": "12433081"
+                }
+            },
+            "5": {
+                "blockName": "Pink Glazed Terracotta",
+                "filename": "glazed_terracotta_pink.png",
+                "blockId": {
+                    "dark": "8593867",
+                    "normal": "9867246",
+                    "light": "16364879"
+                }
+            }
+        }
+    },
+    "20": {
+        "tones": {
+            "dark": "#353535",
+            "normal": "#414141",
+            "light": "#4C4C4C"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Gray Wool",
+                "filename": "wool_colored_gray.png",
+                "blockId": {
+                    "dark": "7676123",
+                    "normal": "16618517",
+                    "light": "9795455"
+                }
+            },
+            "1": {
+                "blockName": "Gray Carpet",
+                "filename": "carpet_colored_gray.png",
+                "blockId": {
+                    "dark": "16667540",
+                    "normal": "15289922",
+                    "light": "5148677"
+                }
+            },
+            "2": {
+                "blockName": "Gray Stained Glass",
+                "filename": "glass_gray.png",
+                "blockId": {
+                    "dark": "5307509",
+                    "normal": "15304672",
+                    "light": "9125922"
+                }
+            },
+            "3": {
+                "blockName": "Gray Concrete",
+                "filename": "concrete_gray.png",
+                "blockId": {
+                    "dark": "5689701",
+                    "normal": "1586602",
+                    "light": "13467197"
+                }
+            },
+            "4": {
+                "blockName": "Gray Concrete Powder",
+                "filename": "concrete_powder_gray.png",
+                "blockId": {
+                    "dark": "8726859",
+                    "normal": "11522662",
+                    "light": "7511230"
+                }
+            },
+            "5": {
+                "blockName": "Gray Glazed Terracotta",
+                "filename": "glazed_terracotta_gray.png",
+                "blockId": {
+                    "dark": "5086270",
+                    "normal": "11224294",
+                    "light": "14774794"
+                }
+            }
+        }
+    },
+    "21": {
+        "tones": {
+            "dark": "#6C6C6C",
+            "normal": "#848484",
+            "light": "#999999"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Light Gray Wool",
+                "filename": "wool_colored_silver.png",
+                "blockId": {
+                    "dark": "10716637",
+                    "normal": "7328135",
+                    "light": "16763967"
+                }
+            },
+            "1": {
+                "blockName": "Light Gray Carpet",
+                "filename": "carpet_colored_silver.png",
+                "blockId": {
+                    "dark": "11782075",
+                    "normal": "8705382",
+                    "light": "2621597"
+                }
+            },
+            "2": {
+                "blockName": "Light Gray Stained Glass",
+                "filename": "glass_silver.png",
+                "blockId": {
+                    "dark": "11896754",
+                    "normal": "13272810",
+                    "light": "14909626"
+                }
+            },
+            "3": {
+                "blockName": "Light Gray Concrete",
+                "filename": "concrete_silver.png",
+                "blockId": {
+                    "dark": "7265967",
+                    "normal": "5292111",
+                    "light": "894419"
+                }
+            },
+            "4": {
+                "blockName": "Light Gray Concrete Powder",
+                "filename": "concrete_powder_silver.png",
+                "blockId": {
+                    "dark": "5515608",
+                    "normal": "1345974",
+                    "light": "15098916"
+                }
+            },
+            "5": {
+                "blockName": "Light Gray Glazed Terracotta",
+                "filename": "glazed_terracotta_silver.png",
+                "blockId": {
+                    "dark": "5565898",
+                    "normal": "10863461",
+                    "light": "9135461"
+                }
+            }
+        }
+    },
+    "22": {
+        "tones": {
+            "dark": "#35596C",
+            "normal": "#416D84",
+            "light": "#4C7F99"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Cyan Wool",
+                "filename": "wool_colored_cyan.png",
+                "blockId": {
+                    "dark": "13575888",
+                    "normal": "13931990",
+                    "light": "6154762"
+                }
+            },
+            "1": {
+                "blockName": "Cyan Carpet",
+                "filename": "carpet_colored_cyan.png",
+                "blockId": {
+                    "dark": "2276397",
+                    "normal": "5535052",
+                    "light": "6092595"
+                }
+            },
+            "2": {
+                "blockName": "Cyan Stained Glass",
+                "filename": "glass_cyan.png",
+                "blockId": {
+                    "dark": "15537088",
+                    "normal": "8046639",
+                    "light": "7614542"
+                }
+            },
+            "3": {
+                "blockName": "Cyan Concrete",
+                "filename": "concrete_cyan.png",
+                "blockId": {
+                    "dark": "6675005",
+                    "normal": "1331857",
+                    "light": "296392"
+                }
+            },
+            "4": {
+                "blockName": "Cyan Concrete Powder",
+                "filename": "concrete_powder_cyan.png",
+                "blockId": {
+                    "dark": "5034117",
+                    "normal": "9573078",
+                    "light": "2737129"
+                }
+            },
+            "5": {
+                "blockName": "Cyan Glazed Terracotta",
+                "filename": "glazed_terracotta_cyan.png",
+                "blockId": {
+                    "dark": "6785712",
+                    "normal": "8079150",
+                    "light": "2010669"
+                }
+            },
+            "6": {
+                "blockName": "Prismarine",
+                "filename": "prismarine.png",
+                "blockId": {
+                    "dark": "1366443",
+                    "normal": "1811785",
+                    "light": "13530869"
+                }
+            }
+        }
+    },
+    "23": {
+        "tones": {
+            "dark": "#592C7D",
+            "normal": "#6D3699",
+            "light": "#7F3FB2"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Purple Wool",
+                "filename": "wool_colored_purple.png",
+                "blockId": {
+                    "dark": "2902484",
+                    "normal": "9050201",
+                    "light": "8473467"
+                }
+            },
+            "1": {
+                "blockName": "Purple Carpet",
+                "filename": "carpet_colored_purple.png",
+                "blockId": {
+                    "dark": "1736682",
+                    "normal": "2247622",
+                    "light": "16495621"
+                }
+            },
+            "2": {
+                "blockName": "Purple Stained Glass",
+                "filename": "glass_purple.png",
+                "blockId": {
+                    "dark": "14674212",
+                    "normal": "10372737",
+                    "light": "8901777"
+                }
+            },
+            "3": {
+                "blockName": "Purple Concrete",
+                "filename": "concrete_purple.png",
+                "blockId": {
+                    "dark": "6588699",
+                    "normal": "5252464",
+                    "light": "16047505"
+                }
+            },
+            "4": {
+                "blockName": "Purple Concrete Powder",
+                "filename": "concrete_powder_purple.png",
+                "blockId": {
+                    "dark": "235377",
+                    "normal": "15916254",
+                    "light": "6677110"
+                }
+            },
+            "5": {
+                "blockName": "Purple Glazed Terracotta",
+                "filename": "glazed_terracotta_purple.png",
+                "blockId": {
+                    "dark": "13874506",
+                    "normal": "11088110",
+                    "light": "4336805"
+                }
+            },
+            "6": {
+                "blockName": "Mycelium",
+                "filename": "mycelium_side.png",
+                "blockId": {
+                    "dark": "6196291",
+                    "normal": "7686120",
+                    "light": "15404360"
+                }
+            }
+        }
+    },
+    "24": {
+        "tones": {
+            "dark": "#24357D",
+            "normal": "#2C4199",
+            "light": "#334CB2"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Blue Wool",
+                "filename": "wool_colored_blue.png",
+                "blockId": {
+                    "dark": "737508",
+                    "normal": "11110128",
+                    "light": "2995728"
+                }
+            },
+            "1": {
+                "blockName": "Blue Carpet",
+                "filename": "carpet_colored_blue.png",
+                "blockId": {
+                    "dark": "9001422",
+                    "normal": "16692026",
+                    "light": "13410491"
+                }
+            },
+            "2": {
+                "blockName": "Blue Stained Glass",
+                "filename": "glass_blue.png",
+                "blockId": {
+                    "dark": "7441618",
+                    "normal": "9122729",
+                    "light": "12658253"
+                }
+            },
+            "3": {
+                "blockName": "Blue Concrete",
+                "filename": "concrete_blue.png",
+                "blockId": {
+                    "dark": "5497316",
+                    "normal": "13000140",
+                    "light": "8542530"
+                }
+            },
+            "4": {
+                "blockName": "Blue Concrete Powder",
+                "filename": "concrete_powder_blue.png",
+                "blockId": {
+                    "dark": "6139564",
+                    "normal": "2988309",
+                    "light": "5330947"
+                }
+            },
+            "5": {
+                "blockName": "Blue Glazed Terracotta",
+                "filename": "glazed_terracotta_blue.png",
+                "blockId": {
+                    "dark": "970104",
+                    "normal": "13657221",
+                    "light": "16600455"
+                }
+            }
+        }
+    },
+    "25": {
+        "tones": {
+            "dark": "#483524",
+            "normal": "#58412C",
+            "light": "#664C33"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Brown Wool",
+                "filename": "wool_colored_brown.png",
+                "blockId": {
+                    "dark": "6765688",
+                    "normal": "15663252",
+                    "light": "12218039"
+                }
+            },
+            "1": {
+                "blockName": "Brown Carpet",
+                "filename": "carpet_colored_brown.png",
+                "blockId": {
+                    "dark": "4143320",
+                    "normal": "4518030",
+                    "light": "9955430"
+                }
+            },
+            "2": {
+                "blockName": "Brown Stained Glass",
+                "filename": "glass_brown.png",
+                "blockId": {
+                    "dark": "16583721",
+                    "normal": "3592350",
+                    "light": "34747"
+                }
+            },
+            "3": {
+                "blockName": "Brown Concrete",
+                "filename": "concrete_brown.png",
+                "blockId": {
+                    "dark": "9459846",
+                    "normal": "6477938",
+                    "light": "11859217"
+                }
+            },
+            "4": {
+                "blockName": "Brown Concrete Powder",
+                "filename": "concrete_powder_brown.png",
+                "blockId": {
+                    "dark": "9825265",
+                    "normal": "13229306",
+                    "light": "14356176"
+                }
+            },
+            "5": {
+                "blockName": "Brown Glazed Terracotta",
+                "filename": "glazed_terracotta_brown.png",
+                "blockId": {
+                    "dark": "1028336",
+                    "normal": "5134144",
+                    "light": "12725475"
+                }
+            },
+            "6": {
+                "blockName": "Dark Oak Log (Any Direction)",
+                "filename": "log_big_oak.png",
+                "blockId": {
+                    "dark": "11576972",
+                    "normal": "5313234",
+                    "light": "11422159"
+                }
+            },
+            "7": {
+                "blockName": "Dark Oak Planks",
+                "filename": "planks_big_oak.png",
+                "blockId": {
+                    "dark": "12131077",
+                    "normal": "4587209",
+                    "light": "5198095"
+                }
+            },
+            "8": {
+                "blockName": "Dark Oak Slab",
+                "filename": "slabs_big_oak.png",
+                "blockId": {
+                    "dark": "12214188",
+                    "normal": "8690611",
+                    "light": "8006212"
+                }
+            },
+            "9": {
+                "blockName": "Spruce Log (Horizontal)",
+                "filename": "log_spruce.png",
+                "blockId": {
+                    "dark": "8064372",
+                    "normal": "2999156",
+                    "light": "14378530"
+                }
+            },
+            "10": {
+                "blockName": "Soul Sand",
+                "filename": "soul_sand.png",
+                "blockId": {
+                    "dark": "10877436",
+                    "normal": "16034705",
+                    "light": "406214"
+                }
+            }
+        }
+    },
+    "26": {
+        "tones": {
+            "dark": "#485924",
+            "normal": "#586D2C",
+            "light": "#667F33"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Green Wool",
+                "filename": "wool_colored_green.png",
+                "blockId": {
+                    "dark": "11049816",
+                    "normal": "13897227",
+                    "light": "5761333"
+                }
+            },
+            "1": {
+                "blockName": "Green Carpet",
+                "filename": "carpet_colored_green.png",
+                "blockId": {
+                    "dark": "13079176",
+                    "normal": "7350817",
+                    "light": "3938614"
+                }
+            },
+            "2": {
+                "blockName": "Green Stained Glass",
+                "filename": "glass_green.png",
+                "blockId": {
+                    "dark": "14540950",
+                    "normal": "4463094",
+                    "light": "12068162"
+                }
+            },
+            "3": {
+                "blockName": "Green Concrete",
+                "filename": "concrete_green.png",
+                "blockId": {
+                    "dark": "10515373",
+                    "normal": "1610398",
+                    "light": "520237"
+                }
+            },
+            "4": {
+                "blockName": "Green Concrete Powder",
+                "filename": "concrete_powder_green.png",
+                "blockId": {
+                    "dark": "10605249",
+                    "normal": "8351366",
+                    "light": "10036550"
+                }
+            },
+            "5": {
+                "blockName": "Green Glazed Terracotta",
+                "filename": "glazed_terracotta_green.png",
+                "blockId": {
+                    "dark": "14763577",
+                    "normal": "6530221",
+                    "light": "14531682"
+                }
+            }
+        }
+    },
+    "27": {
+        "tones": {
+            "dark": "#6C2424",
+            "normal": "#842C2C",
+            "light": "#993333"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Red Wool",
+                "filename": "wool_colored_red.png",
+                "blockId": {
+                    "dark": "15254311",
+                    "normal": "13083647",
+                    "light": "16259620"
+                }
+            },
+            "1": {
+                "blockName": "Red Carpet",
+                "filename": "carpet_colored_red.png",
+                "blockId": {
+                    "dark": "14743801",
+                    "normal": "224006",
+                    "light": "15005277"
+                }
+            },
+            "2": {
+                "blockName": "Red Stained Glass",
+                "filename": "glass_red.png",
+                "blockId": {
+                    "dark": "15499111",
+                    "normal": "9831557",
+                    "light": "7195610"
+                }
+            },
+            "3": {
+                "blockName": "Red Concrete",
+                "filename": "concrete_red.png",
+                "blockId": {
+                    "dark": "9674445",
+                    "normal": "11277283",
+                    "light": "10170635"
+                }
+            },
+            "4": {
+                "blockName": "Red Concrete Powder",
+                "filename": "concrete_powder_red.png",
+                "blockId": {
+                    "dark": "16390364",
+                    "normal": "11048188",
+                    "light": "4124944"
+                }
+            },
+            "5": {
+                "blockName": "Red Glazed Terracotta",
+                "filename": "glazed_terracotta_red.png",
+                "blockId": {
+                    "dark": "10850421",
+                    "normal": "9011981",
+                    "light": "8225187"
+                }
+            },
+            "6": {
+                "blockName": "Bricks",
+                "filename": "brick.png",
+                "blockId": {
+                    "dark": "10287089",
+                    "normal": "7954101",
+                    "light": "8441917"
+                }
+            },
+            "7": {
+                "blockName": "Nether Wart Block",
+                "filename": "nether_wart_block.png",
+                "blockId": {
+                    "dark": "7284002",
+                    "normal": "8781298",
+                    "light": "13368291"
+                }
+            }
+        }
+    },
+    "28": {
+        "tones": {
+            "dark": "#111111",
+            "normal": "#151515",
+            "light": "#191919"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Black Wool",
+                "filename": "wool_colored_black.png",
+                "blockId": {
+                    "dark": "864091",
+                    "normal": "14303538",
+                    "light": "15733919"
+                }
+            },
+            "1": {
+                "blockName": "Black Carpet",
+                "filename": "carpet_colored_black.png",
+                "blockId": {
+                    "dark": "8309346",
+                    "normal": "4397399",
+                    "light": "14186822"
+                }
+            },
+            "2": {
+                "blockName": "Black Stained Glass",
+                "filename": "glass_black.png",
+                "blockId": {
+                    "dark": "5497587",
+                    "normal": "9041623",
+                    "light": "16654414"
+                }
+            },
+            "3": {
+                "blockName": "Black Concrete",
+                "filename": "concrete_black.png",
+                "blockId": {
+                    "dark": "15455184",
+                    "normal": "419905",
+                    "light": "3805994"
+                }
+            },
+            "4": {
+                "blockName": "Black Concrete Powder",
+                "filename": "concrete_powder_black.png",
+                "blockId": {
+                    "dark": "12283089",
+                    "normal": "15496438",
+                    "light": "14842595"
+                }
+            },
+            "5": {
+                "blockName": "Black Glazed Terracotta",
+                "filename": "glazed_terracotta_black.png",
+                "blockId": {
+                    "dark": "5576978",
+                    "normal": "16536065",
+                    "light": "7461999"
+                }
+            },
+            "6": {
+                "blockName": "Block Of Coal",
+                "filename": "coal_block.png",
+                "blockId": {
+                    "dark": "8502318",
+                    "normal": "11974232",
+                    "light": "13071831"
+                }
+            },
+            "7": {
+                "blockName": "Obsidian",
+                "filename": "obsidian.png",
+                "blockId": {
+                    "dark": "15650805",
+                    "normal": "5890639",
+                    "light": "8975050"
+                }
+            }
+        }
+    },
+    "29": {
+        "tones": {
+            "dark": "#B0A836",
+            "normal": "#D7CD42",
+            "light": "#FAEE4D"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Block Of Gold",
+                "filename": "gold_block.png",
+                "blockId": {
+                    "dark": "2507726",
+                    "normal": "6395859",
+                    "light": "15622397"
+                }
+            },
+            "1": {
+                "blockName": "Weighted Pressure Plate (Light)",
+                "filename": "light_weighted_pressure_plate.png",
+                "blockId": {
+                    "dark": "4448051",
+                    "normal": "10356744",
+                    "light": "2657856"
+                }
+            }
+        }
+    },
+    "30": {
+        "tones": {
+            "dark": "#409A96",
+            "normal": "#4FBCB7",
+            "light": "#5CDBD5"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Block Of Diamond",
+                "filename": "diamond_block.png",
+                "blockId": {
+                    "dark": "3208987",
+                    "normal": "13371133",
+                    "light": "8877340"
+                }
+            },
+            "1": {
+                "blockName": "Prismarine Bricks",
+                "filename": "prismarine_bricks.png",
+                "blockId": {
+                    "dark": "7098042",
+                    "normal": "2229386",
+                    "light": "7724910"
+                }
+            },
+            "2": {
+                "blockName": "Dark Prismarine",
+                "filename": "prismarine_dark.png",
+                "blockId": {
+                    "dark": "4431718",
+                    "normal": "5887002",
+                    "light": "7641951"
+                }
+            },
+            "3": {
+                "blockName": "Beacon",
+                "filename": "beacon.png",
+                "blockId": {
+                    "dark": "14435135",
+                    "normal": "9501788",
+                    "light": "5999486"
+                }
+            }
+        }
+    },
+    "31": {
+        "tones": {
+            "dark": "#345AB4",
+            "normal": "#3F6EDC",
+            "light": "#4A80FF"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Lapis Lazuli Block",
+                "filename": "lapis_block.png",
+                "blockId": {
+                    "dark": "11265889",
+                    "normal": "5549426",
+                    "light": "9193901"
+                }
+            }
+        }
+    },
+    "32": {
+        "tones": {
+            "dark": "#009928",
+            "normal": "#00BB32",
+            "light": "#00D93A"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Block Of Emerald",
+                "filename": "emerald_block.png",
+                "blockId": {
+                    "dark": "7765597",
+                    "normal": "16590161",
+                    "light": "6950430"
+                }
+            }
+        }
+    },
+    "33": {
+        "tones": {
+            "dark": "#5B3C22",
+            "normal": "#6F4A2A",
+            "light": "#815631"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Spruce Log (Vertical)",
+                "filename": "log_spruce_top.png",
+                "blockId": {
+                    "dark": "11838189",
+                    "normal": "5144566",
+                    "light": "2222136"
+                }
+            },
+            "1": {
+                "blockName": "Spruce Planks",
+                "filename": "planks_spruce.png",
+                "blockId": {
+                    "dark": "1322327",
+                    "normal": "14182132",
+                    "light": "3670959"
+                }
+            },
+            "2": {
+                "blockName": "Spruce Slab",
+                "filename": "slabs_spruce.png",
+                "blockId": {
+                    "dark": "9111966",
+                    "normal": "14118320",
+                    "light": "2294476"
+                }
+            },
+            "3": {
+                "blockName": "Oak Log (Horizontal)",
+                "filename": "log_oak.png",
+                "blockId": {
+                    "dark": "7805587",
+                    "normal": "3503295",
+                    "light": "7653089"
+                }
+            },
+            "4": {
+                "blockName": "Jungle Log (Horizontal)",
+                "filename": "log_jungle.png",
+                "blockId": {
+                    "dark": "313667",
+                    "normal": "10621931",
+                    "light": "7906926"
+                }
+            },
+            "5": {
+                "blockName": "Podzol",
+                "filename": "dirt_podzol_side.png",
+                "blockId": {
+                    "dark": "15999662",
+                    "normal": "15859485",
+                    "light": "6396876"
+                }
+            }
+        }
+    },
+    "34": {
+        "tones": {
+            "dark": "#4F0100",
+            "normal": "#600100",
+            "light": "#700200"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Netherrack",
+                "filename": "netherrack.png",
+                "blockId": {
+                    "dark": "6917847",
+                    "normal": "5115285",
+                    "light": "10296648"
+                }
+            },
+            "1": {
+                "blockName": "Nether Brick",
+                "filename": "nether_brick.png",
+                "blockId": {
+                    "dark": "12200944",
+                    "normal": "5709716",
+                    "light": "1245258"
+                }
+            },
+            "2": {
+                "blockName": "Nether Brick Slab",
+                "filename": "nether_brick_slab.png",
+                "blockId": {
+                    "dark": "2115330",
+                    "normal": "16103259",
+                    "light": "2710093"
+                }
+            },
+            "3": {
+                "blockName": "Magma Block",
+                "filename": "magma.png",
+                "blockId": {
+                    "dark": "15114363",
+                    "normal": "4045974",
+                    "light": "7368204"
+                }
+            }
+        }
+    },
+    "35": {
+        "tones": {
+            "dark": "#937C71",
+            "normal": "#B4988A",
+            "light": "#D1B1A1"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "White Terracotta",
+                "filename": "hardened_clay_stained_white.png",
+                "blockId": {
+                    "dark": "3017818",
+                    "normal": "14147674",
+                    "light": "6754619"
+                }
+            }
+        }
+    },
+    "36": {
+        "tones": {
+            "dark": "#703919",
+            "normal": "#89461F",
+            "light": "#9F5224"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Orange Terracotta",
+                "filename": "hardened_clay_stained_orange.png",
+                "blockId": {
+                    "dark": "10995294",
+                    "normal": "12374008",
+                    "light": "7048506"
+                }
+            }
+        }
+    },
+    "37": {
+        "tones": {
+            "dark": "#693D4C",
+            "normal": "#804B5D",
+            "light": "#95576C"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Magenta Terracotta",
+                "filename": "hardened_clay_stained_magenta.png",
+                "blockId": {
+                    "dark": "2928740",
+                    "normal": "3620778",
+                    "light": "2157906"
+                }
+            }
+        }
+    },
+    "38": {
+        "tones": {
+            "dark": "#4F4C61",
+            "normal": "#605D77",
+            "light": "#706C8A"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Light Blue Terracotta",
+                "filename": "hardened_clay_stained_light_blue.png",
+                "blockId": {
+                    "dark": "10645480",
+                    "normal": "1157031",
+                    "light": "8894297"
+                }
+            }
+        }
+    },
+    "39": {
+        "tones": {
+            "dark": "#835D19",
+            "normal": "#A0721F",
+            "light": "#BA8524"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Yellow Terracotta",
+                "filename": "hardened_clay_stained_yellow.png",
+                "blockId": {
+                    "dark": "13902449",
+                    "normal": "16620528",
+                    "light": "3435738"
+                }
+            }
+        }
+    },
+    "40": {
+        "tones": {
+            "dark": "#485225",
+            "normal": "#58642D",
+            "light": "#677535"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Lime Terracotta",
+                "filename": "hardened_clay_stained_lime.png",
+                "blockId": {
+                    "dark": "7649293",
+                    "normal": "2594945",
+                    "light": "6948473"
+                }
+            }
+        }
+    },
+    "41": {
+        "tones": {
+            "dark": "#703637",
+            "normal": "#8A4243",
+            "light": "#A04D4E"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Pink Terracotta",
+                "filename": "hardened_clay_stained_pink.png",
+                "blockId": {
+                    "dark": "14372307",
+                    "normal": "5129971",
+                    "light": "13317406"
+                }
+            }
+        }
+    },
+    "42": {
+        "tones": {
+            "dark": "#281C18",
+            "normal": "#31231E",
+            "light": "#392923"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Gray Terracotta",
+                "filename": "hardened_clay_stained_gray.png",
+                "blockId": {
+                    "dark": "472654",
+                    "normal": "16458313",
+                    "light": "11337076"
+                }
+            }
+        }
+    },
+    "43": {
+        "tones": {
+            "dark": "#5F4B45",
+            "normal": "#745C54",
+            "light": "#876B62"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Light Gray Terracotta",
+                "filename": "hardened_clay_stained_silver.png",
+                "blockId": {
+                    "dark": "15020807",
+                    "normal": "6671248",
+                    "light": "8469929"
+                }
+            }
+        }
+    },
+    "44": {
+        "tones": {
+            "dark": "#3D4040",
+            "normal": "#4B4F4F",
+            "light": "#575C5C"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Cyan Terracotta",
+                "filename": "hardened_clay_stained_cyan.png",
+                "blockId": {
+                    "dark": "13557662",
+                    "normal": "5252712",
+                    "light": "7441192"
+                }
+            }
+        }
+    },
+    "45": {
+        "tones": {
+            "dark": "#56333E",
+            "normal": "#693E4B",
+            "light": "#7A4958"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Purple Terracotta",
+                "filename": "hardened_clay_stained_purple.png",
+                "blockId": {
+                    "dark": "6632235",
+                    "normal": "10582843",
+                    "light": "13805193"
+                }
+            }
+        }
+    },
+    "46": {
+        "tones": {
+            "dark": "#352B40",
+            "normal": "#41354F",
+            "light": "#4C3E5C"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Blue Terracotta",
+                "filename": "hardened_clay_stained_blue.png",
+                "blockId": {
+                    "dark": "353687",
+                    "normal": "13714356",
+                    "light": "5712849"
+                }
+            }
+        }
+    },
+    "47": {
+        "tones": {
+            "dark": "#352318",
+            "normal": "#412B1E",
+            "light": "#4C3223"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Brown Terracotta",
+                "filename": "hardened_clay_stained_brown.png",
+                "blockId": {
+                    "dark": "15731578",
+                    "normal": "8989587",
+                    "light": "14787113"
+                }
+            }
+        }
+    },
+    "48": {
+        "tones": {
+            "dark": "#35391D",
+            "normal": "#414624",
+            "light": "#4C522A"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Green Terracotta",
+                "filename": "hardened_clay_stained_green.png",
+                "blockId": {
+                    "dark": "8623270",
+                    "normal": "7562586",
+                    "light": "7685799"
+                }
+            }
+        }
+    },
+    "49": {
+        "tones": {
+            "dark": "#642A20",
+            "normal": "#7A3327",
+            "light": "#8E3C2E"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Red Terracotta",
+                "filename": "hardened_clay_stained_red.png",
+                "blockId": {
+                    "dark": "7073310",
+                    "normal": "16294421",
+                    "light": "422144"
+                }
+            }
+        }
+    },
+    "50": {
+        "tones": {
+            "dark": "#1A0F0B",
+            "normal": "#1F120D",
+            "light": "#251610"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Black Terracotta",
+                "filename": "hardened_clay_stained_black.png",
+                "blockId": {
+                    "dark": "14970121",
+                    "normal": "9961506",
+                    "light": "512184"
+                }
+            }
+        }
+    }
+}
