@@ -98,6 +98,17 @@ def swapHashesForColourId(inputJSON, hashLength):
             del inputJSON[key]["blocks"][blockKey]["blockNameTonesHash"]
     return inputJSON
 
+def createColourHexLookupJSON(inputJSON):
+    lookupTable = {}
+    for colourSetNumber, colourSet in inputJSON.items():
+        for toneName, toneColour in colourSet["tones"].items():
+            assert not toneColour in lookupTable
+            lookupTable[toneColour] = {
+                "colourSetNumber": colourSetNumber,
+                "tone": toneName
+            }
+    return lookupTable
+
 if __name__ == "__main__":
     loadedJSON = loadJSON("./rebaneColours.json")
     modifiedJSON = convertRebaneToSAO(loadedJSON)
@@ -110,3 +121,6 @@ if __name__ == "__main__":
 
     modifiedJSON = swapHashesForColourId(modifiedJSON, hashLength)
     saveJSON("./colours.json", modifiedJSON)
+
+    lookupTable = createColourHexLookupJSON(modifiedJSON)
+    saveJSON("./colourHexLookup.json", lookupTable)

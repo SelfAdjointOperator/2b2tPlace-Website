@@ -1,0 +1,614 @@
+{
+    "#597D27": {
+        "colourSetNumber": "0",
+        "tone": "dark"
+    },
+    "#6D9930": {
+        "colourSetNumber": "0",
+        "tone": "normal"
+    },
+    "#7FB238": {
+        "colourSetNumber": "0",
+        "tone": "light"
+    },
+    "#AEA473": {
+        "colourSetNumber": "1",
+        "tone": "dark"
+    },
+    "#D5C98C": {
+        "colourSetNumber": "1",
+        "tone": "normal"
+    },
+    "#F7E9A3": {
+        "colourSetNumber": "1",
+        "tone": "light"
+    },
+    "#8C8C8C": {
+        "colourSetNumber": "2",
+        "tone": "dark"
+    },
+    "#ABABAB": {
+        "colourSetNumber": "2",
+        "tone": "normal"
+    },
+    "#C7C7C7": {
+        "colourSetNumber": "2",
+        "tone": "light"
+    },
+    "#B40000": {
+        "colourSetNumber": "3",
+        "tone": "dark"
+    },
+    "#DC0000": {
+        "colourSetNumber": "3",
+        "tone": "normal"
+    },
+    "#FF0000": {
+        "colourSetNumber": "3",
+        "tone": "light"
+    },
+    "#7070B4": {
+        "colourSetNumber": "4",
+        "tone": "dark"
+    },
+    "#8A8ADC": {
+        "colourSetNumber": "4",
+        "tone": "normal"
+    },
+    "#A0A0FF": {
+        "colourSetNumber": "4",
+        "tone": "light"
+    },
+    "#757575": {
+        "colourSetNumber": "5",
+        "tone": "dark"
+    },
+    "#909090": {
+        "colourSetNumber": "5",
+        "tone": "normal"
+    },
+    "#A7A7A7": {
+        "colourSetNumber": "5",
+        "tone": "light"
+    },
+    "#005700": {
+        "colourSetNumber": "6",
+        "tone": "dark"
+    },
+    "#006A00": {
+        "colourSetNumber": "6",
+        "tone": "normal"
+    },
+    "#007C00": {
+        "colourSetNumber": "6",
+        "tone": "light"
+    },
+    "#737681": {
+        "colourSetNumber": "7",
+        "tone": "dark"
+    },
+    "#8D909E": {
+        "colourSetNumber": "7",
+        "tone": "normal"
+    },
+    "#A4A8B8": {
+        "colourSetNumber": "7",
+        "tone": "light"
+    },
+    "#6A4C36": {
+        "colourSetNumber": "8",
+        "tone": "dark"
+    },
+    "#825E42": {
+        "colourSetNumber": "8",
+        "tone": "normal"
+    },
+    "#976D4D": {
+        "colourSetNumber": "8",
+        "tone": "light"
+    },
+    "#4F4F4F": {
+        "colourSetNumber": "9",
+        "tone": "dark"
+    },
+    "#606060": {
+        "colourSetNumber": "9",
+        "tone": "normal"
+    },
+    "#707070": {
+        "colourSetNumber": "9",
+        "tone": "light"
+    },
+    "#2D2DB4": {
+        "colourSetNumber": "10",
+        "tone": "dark"
+    },
+    "#3737DC": {
+        "colourSetNumber": "10",
+        "tone": "normal"
+    },
+    "#4040FF": {
+        "colourSetNumber": "10",
+        "tone": "light"
+    },
+    "#645432": {
+        "colourSetNumber": "11",
+        "tone": "dark"
+    },
+    "#7B663E": {
+        "colourSetNumber": "11",
+        "tone": "normal"
+    },
+    "#8F7748": {
+        "colourSetNumber": "11",
+        "tone": "light"
+    },
+    "#B4B1AC": {
+        "colourSetNumber": "12",
+        "tone": "dark"
+    },
+    "#DCD9D3": {
+        "colourSetNumber": "12",
+        "tone": "normal"
+    },
+    "#FFFCF5": {
+        "colourSetNumber": "12",
+        "tone": "light"
+    },
+    "#B4B4B4": {
+        "colourSetNumber": "13",
+        "tone": "dark"
+    },
+    "#DCDCDC": {
+        "colourSetNumber": "13",
+        "tone": "normal"
+    },
+    "#FFFFFF": {
+        "colourSetNumber": "13",
+        "tone": "light"
+    },
+    "#985924": {
+        "colourSetNumber": "14",
+        "tone": "dark"
+    },
+    "#BA6D2C": {
+        "colourSetNumber": "14",
+        "tone": "normal"
+    },
+    "#D87F33": {
+        "colourSetNumber": "14",
+        "tone": "light"
+    },
+    "#7D3598": {
+        "colourSetNumber": "15",
+        "tone": "dark"
+    },
+    "#9941BA": {
+        "colourSetNumber": "15",
+        "tone": "normal"
+    },
+    "#B24CD8": {
+        "colourSetNumber": "15",
+        "tone": "light"
+    },
+    "#486C98": {
+        "colourSetNumber": "16",
+        "tone": "dark"
+    },
+    "#5884BA": {
+        "colourSetNumber": "16",
+        "tone": "normal"
+    },
+    "#6699D8": {
+        "colourSetNumber": "16",
+        "tone": "light"
+    },
+    "#A1A124": {
+        "colourSetNumber": "17",
+        "tone": "dark"
+    },
+    "#C5C52C": {
+        "colourSetNumber": "17",
+        "tone": "normal"
+    },
+    "#E5E533": {
+        "colourSetNumber": "17",
+        "tone": "light"
+    },
+    "#599011": {
+        "colourSetNumber": "18",
+        "tone": "dark"
+    },
+    "#6DB015": {
+        "colourSetNumber": "18",
+        "tone": "normal"
+    },
+    "#7FCC19": {
+        "colourSetNumber": "18",
+        "tone": "light"
+    },
+    "#AA5974": {
+        "colourSetNumber": "19",
+        "tone": "dark"
+    },
+    "#D06D8E": {
+        "colourSetNumber": "19",
+        "tone": "normal"
+    },
+    "#F27FA5": {
+        "colourSetNumber": "19",
+        "tone": "light"
+    },
+    "#353535": {
+        "colourSetNumber": "20",
+        "tone": "dark"
+    },
+    "#414141": {
+        "colourSetNumber": "20",
+        "tone": "normal"
+    },
+    "#4C4C4C": {
+        "colourSetNumber": "20",
+        "tone": "light"
+    },
+    "#6C6C6C": {
+        "colourSetNumber": "21",
+        "tone": "dark"
+    },
+    "#848484": {
+        "colourSetNumber": "21",
+        "tone": "normal"
+    },
+    "#999999": {
+        "colourSetNumber": "21",
+        "tone": "light"
+    },
+    "#35596C": {
+        "colourSetNumber": "22",
+        "tone": "dark"
+    },
+    "#416D84": {
+        "colourSetNumber": "22",
+        "tone": "normal"
+    },
+    "#4C7F99": {
+        "colourSetNumber": "22",
+        "tone": "light"
+    },
+    "#592C7D": {
+        "colourSetNumber": "23",
+        "tone": "dark"
+    },
+    "#6D3699": {
+        "colourSetNumber": "23",
+        "tone": "normal"
+    },
+    "#7F3FB2": {
+        "colourSetNumber": "23",
+        "tone": "light"
+    },
+    "#24357D": {
+        "colourSetNumber": "24",
+        "tone": "dark"
+    },
+    "#2C4199": {
+        "colourSetNumber": "24",
+        "tone": "normal"
+    },
+    "#334CB2": {
+        "colourSetNumber": "24",
+        "tone": "light"
+    },
+    "#483524": {
+        "colourSetNumber": "25",
+        "tone": "dark"
+    },
+    "#58412C": {
+        "colourSetNumber": "25",
+        "tone": "normal"
+    },
+    "#664C33": {
+        "colourSetNumber": "25",
+        "tone": "light"
+    },
+    "#485924": {
+        "colourSetNumber": "26",
+        "tone": "dark"
+    },
+    "#586D2C": {
+        "colourSetNumber": "26",
+        "tone": "normal"
+    },
+    "#667F33": {
+        "colourSetNumber": "26",
+        "tone": "light"
+    },
+    "#6C2424": {
+        "colourSetNumber": "27",
+        "tone": "dark"
+    },
+    "#842C2C": {
+        "colourSetNumber": "27",
+        "tone": "normal"
+    },
+    "#993333": {
+        "colourSetNumber": "27",
+        "tone": "light"
+    },
+    "#111111": {
+        "colourSetNumber": "28",
+        "tone": "dark"
+    },
+    "#151515": {
+        "colourSetNumber": "28",
+        "tone": "normal"
+    },
+    "#191919": {
+        "colourSetNumber": "28",
+        "tone": "light"
+    },
+    "#B0A836": {
+        "colourSetNumber": "29",
+        "tone": "dark"
+    },
+    "#D7CD42": {
+        "colourSetNumber": "29",
+        "tone": "normal"
+    },
+    "#FAEE4D": {
+        "colourSetNumber": "29",
+        "tone": "light"
+    },
+    "#409A96": {
+        "colourSetNumber": "30",
+        "tone": "dark"
+    },
+    "#4FBCB7": {
+        "colourSetNumber": "30",
+        "tone": "normal"
+    },
+    "#5CDBD5": {
+        "colourSetNumber": "30",
+        "tone": "light"
+    },
+    "#345AB4": {
+        "colourSetNumber": "31",
+        "tone": "dark"
+    },
+    "#3F6EDC": {
+        "colourSetNumber": "31",
+        "tone": "normal"
+    },
+    "#4A80FF": {
+        "colourSetNumber": "31",
+        "tone": "light"
+    },
+    "#009928": {
+        "colourSetNumber": "32",
+        "tone": "dark"
+    },
+    "#00BB32": {
+        "colourSetNumber": "32",
+        "tone": "normal"
+    },
+    "#00D93A": {
+        "colourSetNumber": "32",
+        "tone": "light"
+    },
+    "#5B3C22": {
+        "colourSetNumber": "33",
+        "tone": "dark"
+    },
+    "#6F4A2A": {
+        "colourSetNumber": "33",
+        "tone": "normal"
+    },
+    "#815631": {
+        "colourSetNumber": "33",
+        "tone": "light"
+    },
+    "#4F0100": {
+        "colourSetNumber": "34",
+        "tone": "dark"
+    },
+    "#600100": {
+        "colourSetNumber": "34",
+        "tone": "normal"
+    },
+    "#700200": {
+        "colourSetNumber": "34",
+        "tone": "light"
+    },
+    "#937C71": {
+        "colourSetNumber": "35",
+        "tone": "dark"
+    },
+    "#B4988A": {
+        "colourSetNumber": "35",
+        "tone": "normal"
+    },
+    "#D1B1A1": {
+        "colourSetNumber": "35",
+        "tone": "light"
+    },
+    "#703919": {
+        "colourSetNumber": "36",
+        "tone": "dark"
+    },
+    "#89461F": {
+        "colourSetNumber": "36",
+        "tone": "normal"
+    },
+    "#9F5224": {
+        "colourSetNumber": "36",
+        "tone": "light"
+    },
+    "#693D4C": {
+        "colourSetNumber": "37",
+        "tone": "dark"
+    },
+    "#804B5D": {
+        "colourSetNumber": "37",
+        "tone": "normal"
+    },
+    "#95576C": {
+        "colourSetNumber": "37",
+        "tone": "light"
+    },
+    "#4F4C61": {
+        "colourSetNumber": "38",
+        "tone": "dark"
+    },
+    "#605D77": {
+        "colourSetNumber": "38",
+        "tone": "normal"
+    },
+    "#706C8A": {
+        "colourSetNumber": "38",
+        "tone": "light"
+    },
+    "#835D19": {
+        "colourSetNumber": "39",
+        "tone": "dark"
+    },
+    "#A0721F": {
+        "colourSetNumber": "39",
+        "tone": "normal"
+    },
+    "#BA8524": {
+        "colourSetNumber": "39",
+        "tone": "light"
+    },
+    "#485225": {
+        "colourSetNumber": "40",
+        "tone": "dark"
+    },
+    "#58642D": {
+        "colourSetNumber": "40",
+        "tone": "normal"
+    },
+    "#677535": {
+        "colourSetNumber": "40",
+        "tone": "light"
+    },
+    "#703637": {
+        "colourSetNumber": "41",
+        "tone": "dark"
+    },
+    "#8A4243": {
+        "colourSetNumber": "41",
+        "tone": "normal"
+    },
+    "#A04D4E": {
+        "colourSetNumber": "41",
+        "tone": "light"
+    },
+    "#281C18": {
+        "colourSetNumber": "42",
+        "tone": "dark"
+    },
+    "#31231E": {
+        "colourSetNumber": "42",
+        "tone": "normal"
+    },
+    "#392923": {
+        "colourSetNumber": "42",
+        "tone": "light"
+    },
+    "#5F4B45": {
+        "colourSetNumber": "43",
+        "tone": "dark"
+    },
+    "#745C54": {
+        "colourSetNumber": "43",
+        "tone": "normal"
+    },
+    "#876B62": {
+        "colourSetNumber": "43",
+        "tone": "light"
+    },
+    "#3D4040": {
+        "colourSetNumber": "44",
+        "tone": "dark"
+    },
+    "#4B4F4F": {
+        "colourSetNumber": "44",
+        "tone": "normal"
+    },
+    "#575C5C": {
+        "colourSetNumber": "44",
+        "tone": "light"
+    },
+    "#56333E": {
+        "colourSetNumber": "45",
+        "tone": "dark"
+    },
+    "#693E4B": {
+        "colourSetNumber": "45",
+        "tone": "normal"
+    },
+    "#7A4958": {
+        "colourSetNumber": "45",
+        "tone": "light"
+    },
+    "#352B40": {
+        "colourSetNumber": "46",
+        "tone": "dark"
+    },
+    "#41354F": {
+        "colourSetNumber": "46",
+        "tone": "normal"
+    },
+    "#4C3E5C": {
+        "colourSetNumber": "46",
+        "tone": "light"
+    },
+    "#352318": {
+        "colourSetNumber": "47",
+        "tone": "dark"
+    },
+    "#412B1E": {
+        "colourSetNumber": "47",
+        "tone": "normal"
+    },
+    "#4C3223": {
+        "colourSetNumber": "47",
+        "tone": "light"
+    },
+    "#35391D": {
+        "colourSetNumber": "48",
+        "tone": "dark"
+    },
+    "#414624": {
+        "colourSetNumber": "48",
+        "tone": "normal"
+    },
+    "#4C522A": {
+        "colourSetNumber": "48",
+        "tone": "light"
+    },
+    "#642A20": {
+        "colourSetNumber": "49",
+        "tone": "dark"
+    },
+    "#7A3327": {
+        "colourSetNumber": "49",
+        "tone": "normal"
+    },
+    "#8E3C2E": {
+        "colourSetNumber": "49",
+        "tone": "light"
+    },
+    "#1A0F0B": {
+        "colourSetNumber": "50",
+        "tone": "dark"
+    },
+    "#1F120D": {
+        "colourSetNumber": "50",
+        "tone": "normal"
+    },
+    "#251610": {
+        "colourSetNumber": "50",
+        "tone": "light"
+    }
+}
