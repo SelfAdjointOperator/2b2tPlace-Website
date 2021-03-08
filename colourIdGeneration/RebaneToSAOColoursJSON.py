@@ -109,6 +109,58 @@ def createColourHexLookupJSON(inputJSON):
             }
     return lookupTable
 
+def create_colours_naturalJSON(inputJSON):
+    """I have manually chosen what is natual and what is not per colourSet"""
+    allowedColourSets = {
+        "0": ["0"],
+        "1": ["0"], # maybe not 1 sandstone
+        "2": ["0"],
+        "3": ["1"],
+        "4": ["0"],
+        "5": ["2"],
+        "6": ["0"], # leaves, may have to consider biome
+        "7": ["0"],
+        "8": ["3"],
+        "9": ["1"], # maybe enable 7 gravel
+        "10": ["0"], # water
+        "11": ["0"],
+        "12": ["1"],
+        "13": ["7"],
+        "14": ["9", "11"],
+        "15": ["6"],
+        "17": ["6"],
+        "18": ["6"],
+        "22": ["6"],
+        "23": ["6"],
+        "25": ["6"],
+        "27": ["6"],
+        "28": ["7"],
+        "30": ["1"],
+        "33": ["5"], # set to podzol, could be horizontal log
+        "34": ["0"],
+        "35": ["0"], # terracotta starts
+        "36": ["0"],
+        "37": ["0"],
+        "38": ["0"],
+        "39": ["0"],
+        "40": ["0"],
+        "41": ["0"],
+        "42": ["0"],
+        "43": ["0"],
+        "44": ["0"],
+        "45": ["0"],
+        "46": ["0"],
+        "47": ["0"],
+        "48": ["0"],
+        "49": ["0"],
+        "50": ["0"]  # terracotta finishes
+    }
+    returnJSON = {}
+    for allowedColourSet_key, allowedColourSet_value in allowedColourSets.items():
+        returnJSON[allowedColourSet_key] = inputJSON[allowedColourSet_key]
+        returnJSON[allowedColourSet_key]["blocks"] = {k: v for (k, v) in returnJSON[allowedColourSet_key]["blocks"].items() if k in allowedColourSet_value}
+    return returnJSON
+
 if __name__ == "__main__":
     loadedJSON = loadJSON("./rebaneColours.json")
     modifiedJSON = convertRebaneToSAO(loadedJSON)
@@ -124,3 +176,6 @@ if __name__ == "__main__":
 
     lookupTable = createColourHexLookupJSON(modifiedJSON)
     saveJSON("./colourHexLookup.json", lookupTable)
+
+    colours_natural = create_colours_naturalJSON(modifiedJSON)
+    saveJSON("./colours_natural.json", colours_natural)

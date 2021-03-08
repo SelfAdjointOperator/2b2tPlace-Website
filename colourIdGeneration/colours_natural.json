@@ -1,0 +1,767 @@
+{
+    "0": {
+        "tones": {
+            "dark": "#597D27",
+            "normal": "#6D9930",
+            "light": "#7FB238"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Grass Block",
+                "filename": "grass_side.png",
+                "blockId": {
+                    "dark": "2829185",
+                    "normal": "8949078",
+                    "light": "8491889"
+                }
+            }
+        }
+    },
+    "1": {
+        "tones": {
+            "dark": "#AEA473",
+            "normal": "#D5C98C",
+            "light": "#F7E9A3"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Sand",
+                "filename": "sand.png",
+                "blockId": {
+                    "dark": "16604166",
+                    "normal": "14901923",
+                    "light": "1637790"
+                }
+            }
+        }
+    },
+    "2": {
+        "tones": {
+            "dark": "#8C8C8C",
+            "normal": "#ABABAB",
+            "light": "#C7C7C7"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Cobweb",
+                "filename": "web.png",
+                "blockId": {
+                    "dark": "1544130",
+                    "normal": "16398976",
+                    "light": "552701"
+                }
+            }
+        }
+    },
+    "3": {
+        "tones": {
+            "dark": "#B40000",
+            "normal": "#DC0000",
+            "light": "#FF0000"
+        },
+        "blocks": {
+            "1": {
+                "blockName": "Block Of Redstone",
+                "filename": "redstone_block.png",
+                "blockId": {
+                    "dark": "8337175",
+                    "normal": "8949958",
+                    "light": "13412864"
+                }
+            }
+        }
+    },
+    "4": {
+        "tones": {
+            "dark": "#7070B4",
+            "normal": "#8A8ADC",
+            "light": "#A0A0FF"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Ice",
+                "filename": "ice.png",
+                "blockId": {
+                    "dark": "10859666",
+                    "normal": "2081106",
+                    "light": "9504377"
+                }
+            }
+        }
+    },
+    "5": {
+        "tones": {
+            "dark": "#757575",
+            "normal": "#909090",
+            "light": "#A7A7A7"
+        },
+        "blocks": {
+            "2": {
+                "blockName": "Iron Bars",
+                "filename": "iron_bars.png",
+                "blockId": {
+                    "dark": "15453190",
+                    "normal": "186244",
+                    "light": "8665813"
+                }
+            }
+        }
+    },
+    "6": {
+        "tones": {
+            "dark": "#005700",
+            "normal": "#006A00",
+            "light": "#007C00"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Leaves (Oak)",
+                "filename": "leaves.png",
+                "blockId": {
+                    "dark": "9515538",
+                    "normal": "14006275",
+                    "light": "6712828"
+                }
+            }
+        }
+    },
+    "7": {
+        "tones": {
+            "dark": "#737681",
+            "normal": "#8D909E",
+            "light": "#A4A8B8"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Clay",
+                "filename": "clay.png",
+                "blockId": {
+                    "dark": "8459021",
+                    "normal": "3708623",
+                    "light": "16121140"
+                }
+            }
+        }
+    },
+    "8": {
+        "tones": {
+            "dark": "#6A4C36",
+            "normal": "#825E42",
+            "light": "#976D4D"
+        },
+        "blocks": {
+            "3": {
+                "blockName": "Dirt",
+                "filename": "dirt.png",
+                "blockId": {
+                    "dark": "6613784",
+                    "normal": "6140371",
+                    "light": "11144869"
+                }
+            }
+        }
+    },
+    "9": {
+        "tones": {
+            "dark": "#4F4F4F",
+            "normal": "#606060",
+            "light": "#707070"
+        },
+        "blocks": {
+            "1": {
+                "blockName": "Stone",
+                "filename": "stone.png",
+                "blockId": {
+                    "dark": "1265166",
+                    "normal": "16734032",
+                    "light": "14613592"
+                }
+            }
+        }
+    },
+    "10": {
+        "tones": {
+            "dark": "#2D2DB4",
+            "normal": "#3737DC",
+            "light": "#4040FF"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Water (Unsupported!)",
+                "filename": "water_bucket.png",
+                "blockId": {
+                    "dark": "1453489",
+                    "normal": "1510469",
+                    "light": "7035968"
+                }
+            }
+        }
+    },
+    "11": {
+        "tones": {
+            "dark": "#645432",
+            "normal": "#7B663E",
+            "light": "#8F7748"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Oak Log (Vertical)",
+                "filename": "log_oak_top.png",
+                "blockId": {
+                    "dark": "10958715",
+                    "normal": "12019064",
+                    "light": "2896613"
+                }
+            }
+        }
+    },
+    "12": {
+        "tones": {
+            "dark": "#B4B1AC",
+            "normal": "#DCD9D3",
+            "light": "#FFFCF5"
+        },
+        "blocks": {
+            "1": {
+                "blockName": "Diorite",
+                "filename": "stone_diorite.png",
+                "blockId": {
+                    "dark": "10549078",
+                    "normal": "8453251",
+                    "light": "14727834"
+                }
+            }
+        }
+    },
+    "13": {
+        "tones": {
+            "dark": "#B4B4B4",
+            "normal": "#DCDCDC",
+            "light": "#FFFFFF"
+        },
+        "blocks": {
+            "7": {
+                "blockName": "Snow Layer",
+                "filename": "snow_layer.png",
+                "blockId": {
+                    "dark": "12542385",
+                    "normal": "2548627",
+                    "light": "5247952"
+                }
+            }
+        }
+    },
+    "14": {
+        "tones": {
+            "dark": "#985924",
+            "normal": "#BA6D2C",
+            "light": "#D87F33"
+        },
+        "blocks": {
+            "9": {
+                "blockName": "Red Sand",
+                "filename": "red_sand.png",
+                "blockId": {
+                    "dark": "1885063",
+                    "normal": "11906892",
+                    "light": "2431097"
+                }
+            },
+            "11": {
+                "blockName": "Terracotta",
+                "filename": "hardened_clay.png",
+                "blockId": {
+                    "dark": "16207194",
+                    "normal": "14627183",
+                    "light": "15504546"
+                }
+            }
+        }
+    },
+    "15": {
+        "tones": {
+            "dark": "#7D3598",
+            "normal": "#9941BA",
+            "light": "#B24CD8"
+        },
+        "blocks": {
+            "6": {
+                "blockName": "Purpur Block",
+                "filename": "purpur_block.png",
+                "blockId": {
+                    "dark": "14035033",
+                    "normal": "12558419",
+                    "light": "394910"
+                }
+            }
+        }
+    },
+    "17": {
+        "tones": {
+            "dark": "#A1A124",
+            "normal": "#C5C52C",
+            "light": "#E5E533"
+        },
+        "blocks": {
+            "6": {
+                "blockName": "Hay Bale",
+                "filename": "hay_block_side.png",
+                "blockId": {
+                    "dark": "3758102",
+                    "normal": "8613708",
+                    "light": "11817908"
+                }
+            }
+        }
+    },
+    "18": {
+        "tones": {
+            "dark": "#599011",
+            "normal": "#6DB015",
+            "light": "#7FCC19"
+        },
+        "blocks": {
+            "6": {
+                "blockName": "Melon",
+                "filename": "melon_side.png",
+                "blockId": {
+                    "dark": "470995",
+                    "normal": "4646370",
+                    "light": "8023709"
+                }
+            }
+        }
+    },
+    "22": {
+        "tones": {
+            "dark": "#35596C",
+            "normal": "#416D84",
+            "light": "#4C7F99"
+        },
+        "blocks": {
+            "6": {
+                "blockName": "Prismarine",
+                "filename": "prismarine.png",
+                "blockId": {
+                    "dark": "1366443",
+                    "normal": "1811785",
+                    "light": "13530869"
+                }
+            }
+        }
+    },
+    "23": {
+        "tones": {
+            "dark": "#592C7D",
+            "normal": "#6D3699",
+            "light": "#7F3FB2"
+        },
+        "blocks": {
+            "6": {
+                "blockName": "Mycelium",
+                "filename": "mycelium_side.png",
+                "blockId": {
+                    "dark": "6196291",
+                    "normal": "7686120",
+                    "light": "15404360"
+                }
+            }
+        }
+    },
+    "25": {
+        "tones": {
+            "dark": "#483524",
+            "normal": "#58412C",
+            "light": "#664C33"
+        },
+        "blocks": {
+            "6": {
+                "blockName": "Dark Oak Log (Any Direction)",
+                "filename": "log_big_oak.png",
+                "blockId": {
+                    "dark": "11576972",
+                    "normal": "5313234",
+                    "light": "11422159"
+                }
+            }
+        }
+    },
+    "27": {
+        "tones": {
+            "dark": "#6C2424",
+            "normal": "#842C2C",
+            "light": "#993333"
+        },
+        "blocks": {
+            "6": {
+                "blockName": "Bricks",
+                "filename": "brick.png",
+                "blockId": {
+                    "dark": "10287089",
+                    "normal": "7954101",
+                    "light": "8441917"
+                }
+            }
+        }
+    },
+    "28": {
+        "tones": {
+            "dark": "#111111",
+            "normal": "#151515",
+            "light": "#191919"
+        },
+        "blocks": {
+            "7": {
+                "blockName": "Obsidian",
+                "filename": "obsidian.png",
+                "blockId": {
+                    "dark": "15650805",
+                    "normal": "5890639",
+                    "light": "8975050"
+                }
+            }
+        }
+    },
+    "30": {
+        "tones": {
+            "dark": "#409A96",
+            "normal": "#4FBCB7",
+            "light": "#5CDBD5"
+        },
+        "blocks": {
+            "1": {
+                "blockName": "Prismarine Bricks",
+                "filename": "prismarine_bricks.png",
+                "blockId": {
+                    "dark": "7098042",
+                    "normal": "2229386",
+                    "light": "7724910"
+                }
+            }
+        }
+    },
+    "33": {
+        "tones": {
+            "dark": "#5B3C22",
+            "normal": "#6F4A2A",
+            "light": "#815631"
+        },
+        "blocks": {
+            "5": {
+                "blockName": "Podzol",
+                "filename": "dirt_podzol_side.png",
+                "blockId": {
+                    "dark": "15999662",
+                    "normal": "15859485",
+                    "light": "6396876"
+                }
+            }
+        }
+    },
+    "34": {
+        "tones": {
+            "dark": "#4F0100",
+            "normal": "#600100",
+            "light": "#700200"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Netherrack",
+                "filename": "netherrack.png",
+                "blockId": {
+                    "dark": "6917847",
+                    "normal": "5115285",
+                    "light": "10296648"
+                }
+            }
+        }
+    },
+    "35": {
+        "tones": {
+            "dark": "#937C71",
+            "normal": "#B4988A",
+            "light": "#D1B1A1"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "White Terracotta",
+                "filename": "hardened_clay_stained_white.png",
+                "blockId": {
+                    "dark": "3017818",
+                    "normal": "14147674",
+                    "light": "6754619"
+                }
+            }
+        }
+    },
+    "36": {
+        "tones": {
+            "dark": "#703919",
+            "normal": "#89461F",
+            "light": "#9F5224"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Orange Terracotta",
+                "filename": "hardened_clay_stained_orange.png",
+                "blockId": {
+                    "dark": "10995294",
+                    "normal": "12374008",
+                    "light": "7048506"
+                }
+            }
+        }
+    },
+    "37": {
+        "tones": {
+            "dark": "#693D4C",
+            "normal": "#804B5D",
+            "light": "#95576C"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Magenta Terracotta",
+                "filename": "hardened_clay_stained_magenta.png",
+                "blockId": {
+                    "dark": "2928740",
+                    "normal": "3620778",
+                    "light": "2157906"
+                }
+            }
+        }
+    },
+    "38": {
+        "tones": {
+            "dark": "#4F4C61",
+            "normal": "#605D77",
+            "light": "#706C8A"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Light Blue Terracotta",
+                "filename": "hardened_clay_stained_light_blue.png",
+                "blockId": {
+                    "dark": "10645480",
+                    "normal": "1157031",
+                    "light": "8894297"
+                }
+            }
+        }
+    },
+    "39": {
+        "tones": {
+            "dark": "#835D19",
+            "normal": "#A0721F",
+            "light": "#BA8524"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Yellow Terracotta",
+                "filename": "hardened_clay_stained_yellow.png",
+                "blockId": {
+                    "dark": "13902449",
+                    "normal": "16620528",
+                    "light": "3435738"
+                }
+            }
+        }
+    },
+    "40": {
+        "tones": {
+            "dark": "#485225",
+            "normal": "#58642D",
+            "light": "#677535"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Lime Terracotta",
+                "filename": "hardened_clay_stained_lime.png",
+                "blockId": {
+                    "dark": "7649293",
+                    "normal": "2594945",
+                    "light": "6948473"
+                }
+            }
+        }
+    },
+    "41": {
+        "tones": {
+            "dark": "#703637",
+            "normal": "#8A4243",
+            "light": "#A04D4E"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Pink Terracotta",
+                "filename": "hardened_clay_stained_pink.png",
+                "blockId": {
+                    "dark": "14372307",
+                    "normal": "5129971",
+                    "light": "13317406"
+                }
+            }
+        }
+    },
+    "42": {
+        "tones": {
+            "dark": "#281C18",
+            "normal": "#31231E",
+            "light": "#392923"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Gray Terracotta",
+                "filename": "hardened_clay_stained_gray.png",
+                "blockId": {
+                    "dark": "472654",
+                    "normal": "16458313",
+                    "light": "11337076"
+                }
+            }
+        }
+    },
+    "43": {
+        "tones": {
+            "dark": "#5F4B45",
+            "normal": "#745C54",
+            "light": "#876B62"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Light Gray Terracotta",
+                "filename": "hardened_clay_stained_silver.png",
+                "blockId": {
+                    "dark": "15020807",
+                    "normal": "6671248",
+                    "light": "8469929"
+                }
+            }
+        }
+    },
+    "44": {
+        "tones": {
+            "dark": "#3D4040",
+            "normal": "#4B4F4F",
+            "light": "#575C5C"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Cyan Terracotta",
+                "filename": "hardened_clay_stained_cyan.png",
+                "blockId": {
+                    "dark": "13557662",
+                    "normal": "5252712",
+                    "light": "7441192"
+                }
+            }
+        }
+    },
+    "45": {
+        "tones": {
+            "dark": "#56333E",
+            "normal": "#693E4B",
+            "light": "#7A4958"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Purple Terracotta",
+                "filename": "hardened_clay_stained_purple.png",
+                "blockId": {
+                    "dark": "6632235",
+                    "normal": "10582843",
+                    "light": "13805193"
+                }
+            }
+        }
+    },
+    "46": {
+        "tones": {
+            "dark": "#352B40",
+            "normal": "#41354F",
+            "light": "#4C3E5C"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Blue Terracotta",
+                "filename": "hardened_clay_stained_blue.png",
+                "blockId": {
+                    "dark": "353687",
+                    "normal": "13714356",
+                    "light": "5712849"
+                }
+            }
+        }
+    },
+    "47": {
+        "tones": {
+            "dark": "#352318",
+            "normal": "#412B1E",
+            "light": "#4C3223"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Brown Terracotta",
+                "filename": "hardened_clay_stained_brown.png",
+                "blockId": {
+                    "dark": "15731578",
+                    "normal": "8989587",
+                    "light": "14787113"
+                }
+            }
+        }
+    },
+    "48": {
+        "tones": {
+            "dark": "#35391D",
+            "normal": "#414624",
+            "light": "#4C522A"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Green Terracotta",
+                "filename": "hardened_clay_stained_green.png",
+                "blockId": {
+                    "dark": "8623270",
+                    "normal": "7562586",
+                    "light": "7685799"
+                }
+            }
+        }
+    },
+    "49": {
+        "tones": {
+            "dark": "#642A20",
+            "normal": "#7A3327",
+            "light": "#8E3C2E"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Red Terracotta",
+                "filename": "hardened_clay_stained_red.png",
+                "blockId": {
+                    "dark": "7073310",
+                    "normal": "16294421",
+                    "light": "422144"
+                }
+            }
+        }
+    },
+    "50": {
+        "tones": {
+            "dark": "#1A0F0B",
+            "normal": "#1F120D",
+            "light": "#251610"
+        },
+        "blocks": {
+            "0": {
+                "blockName": "Black Terracotta",
+                "filename": "hardened_clay_stained_black.png",
+                "blockId": {
+                    "dark": "14970121",
+                    "normal": "9961506",
+                    "light": "512184"
+                }
+            }
+        }
+    }
+}
