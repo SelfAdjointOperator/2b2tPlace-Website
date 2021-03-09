@@ -1,0 +1,8 @@
+{
+    "databaseURI": "[STR] Filepath relative to main.py that the database should be found at.",
+    "initialMapJSONFilepath": "[STR] When the database is first created, a map JSON is loaded and inserted into the pixels table. A map JSON can be created by ./imageToJSON/imageToJSON.py; the filepath of the image it uses (relative to this directory) is specified here.",
+    "secretKey_API": "[STR] secret key that the Discord bot /admin uses to verify themselves when making requests to /api/admin/* routes.",
+    "secretKey_App": "[STR] secret key that the main program uses to sign cookies",
+    "timeBetweenSubmissions": "[INT] the time in seconds a user must wait before being allowed to post another submission",
+    "tokenLength": "[INT] the length of tokens that are sent by the Discord bot / stored in the database"
+}
