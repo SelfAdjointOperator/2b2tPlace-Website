@@ -7,4 +7,3 @@ __pycache__/
 *.sock
 /config.json
 /database.sqlite3
-/imageToJSON/*.json
