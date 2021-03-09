@@ -25,7 +25,7 @@ class PixelHistory(db.Model):
     colourId      = db.Column(db.Integer, nullable = False) # use Colour Enum
     timestamp     = db.Column(db.Integer, nullable = False)
     pixelActivityNumber = db.Column(db.Integer, nullable = False)
-    userActivityNumber = db.Column(db.Integer, nullable = False)
+    userActivityNumber = db.Column(db.Integer, nullable = True)
 
     pixel         = db.relationship("Pixel", back_populates = "pixelHistoryEntries")
     user          = db.relationship("User", back_populates = "pixelHistoryEntries")
@@ -64,5 +64,3 @@ def initialiseFromMapJSON(mapJSONFilename):
         loadedJSON = json.load(f)
     db.session.bulk_save_objects([Pixel(x = pixel["x"], y = pixel["y"], colourId = pixel["colourId"]) for pixel in loadedJSON])
     db.session.commit()
-
-# class ModelsAPI():

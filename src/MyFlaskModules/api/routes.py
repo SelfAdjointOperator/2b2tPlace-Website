@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, url_for, request, abort
+from flask import Blueprint, render_template, url_for, request, abort, flash
 from sqlalchemy import and_
 from time import time
 import random
@@ -6,6 +6,7 @@ import json
 
 from . import MODULE_CONFIG
 from .models import db, Pixel, PixelHistory, User, ActiveToken
+from .forms import Form_SubmitPixel
 
 bp = Blueprint("api",
     __name__,
@@ -117,6 +118,70 @@ def history():
         "colourId": historyEntry.colourId,
         "timestamp": historyEntry.timestamp,
         "userId": historyEntry.userId,
-        "userDiscordTag": historyEntry.user.discordTag
+        "userDiscordTag": historyEntry.user.discordTag if historyEntry.user is not None else None
     } for historyEntry in historyEntries]
     return json.dumps(returnJSON)
+
+@bp.route("/submit.json", methods = ["POST"])
+def submit():
+    form = Form_SubmitPixel(request.form)
+    if form is None:
+        flash("Error: No form detected in POST request", "error")
+        return abort(400)
+    if not form.validate():
+        for field in form.errors:
+            for error in form.errors[field]:
+                print(error)
+                flash("Error: {}".format(error), "error")
+        return abort(400)
+
+    form_auth_token_data = (form.fsp_auth_token.data).upper()
+
+    if (db_token := ActiveToken.query.filter_by(tokenValue = form_auth_token_data).first()) is None:
+        flash("Error: Token not recognised", "error")
+        abort(401)
+
+    form_coordinate_x = int(form.fsp_coordinate_x.data)
+    form_coordinate_y = int(form.fsp_coordinate_y.data)
+    form_anonymise = form.fsp_anonymise.data
+    form_colourId = int(form.fsp_colourId.data)
+    timestamp = int(time())
+
+    db_user = db_token.user
+    db_pixel = Pixel.query.filter_by(x = form_coordinate_x, y = form_coordinate_y).first()
+
+    newPixelHistory_pixelId = db_pixel.id
+    newPixelHistory_oldColourId = db_pixel.colourId
+    newPixelHistory_colourId = form_colourId
+    newPixelHistory_timestamp = timestamp
+    newPixelHistory_pixelActivityNumber = db_pixel.pixelActivityTotal + 1
+
+    db_pixel.pixelActivityTotal = db_pixel.pixelActivityTotal + 1
+
+    if form_anonymise == "public":
+        newPixelHistory_userId = db_user.id
+        newPixelHistory_userActivityNumber = db_user.userActivityTotal + 1
+        db_user.userActivityTotal = db_user.userActivityTotal + 1
+    else:
+        newPixelHistory_userId = None
+        newPixelHistory_userActivityNumber = None
+
+    db_pixel.colourId = form_colourId
+    db_user.lastSubmitTime = timestamp
+
+    newPixelHistory = PixelHistory(
+        pixelId = newPixelHistory_pixelId,
+        userId = newPixelHistory_userId,
+        oldColourId = newPixelHistory_oldColourId,
+        colourId = newPixelHistory_colourId,
+        timestamp = timestamp,
+        pixelActivityNumber = newPixelHistory_pixelActivityNumber,
+        userActivityNumber = newPixelHistory_userActivityNumber
+    )
+
+    db.session.add(newPixelHistory)
+    db.session.delete(db_token)
+    db.session.commit()
+    flash("Pixel updated!", "info")
+
+    return json.dumps({"success": "success"}), 200
