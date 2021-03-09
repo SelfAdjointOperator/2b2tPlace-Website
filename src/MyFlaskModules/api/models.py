@@ -1,3 +1,5 @@
+import json
+import os
 from flask_sqlalchemy import SQLAlchemy
 
 from . import MODULE_CONFIG
@@ -52,5 +54,15 @@ def initialiseDatabaseIfNecessary():
     if not (pixelPing := Pixel.query.first()):
         db.session.bulk_save_objects([Pixel(x = x, y = y) for x in range(128) for y in range(128)])
         db.session.commit()
+
+def initialiseFromMapJSON(mapJSONFilename):
+    """For initialising our database with an image"""
+    if (pixelPing := Pixel.query.first()):
+        return
+    mapJSONFilename = os.path.normpath(mapJSONFilename)
+    with open(mapJSONFilename) as f:
+        loadedJSON = json.load(f)
+    db.session.bulk_save_objects([Pixel(x = pixel["x"], y = pixel["y"], colourId = pixel["colourId"]) for pixel in loadedJSON])
+    db.session.commit()
 
 # class ModelsAPI():

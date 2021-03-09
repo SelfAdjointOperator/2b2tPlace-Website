@@ -17,7 +17,7 @@ app.register_blueprint(bp_root)
 
 from MyFlaskModules.api.routes import bp as bp_api
 app.register_blueprint(bp_api)
-from MyFlaskModules.api.models import db, initialiseDatabaseIfNecessary
+from MyFlaskModules.api.models import db, initialiseDatabaseIfNecessary, initialiseFromMapJSON
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///{}".format(GLOBAL_CONFIG["databaseURI"])
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
@@ -30,7 +30,8 @@ def page_not_found(e):
 db.init_app(app)
 with app.app_context():
     db.create_all()
-    initialiseDatabaseIfNecessary()
+    # initialiseDatabaseIfNecessary()
+    initialiseFromMapJSON(GLOBAL_CONFIG["initialMapJSONFilepath"])
 
 ################################################################################
 
