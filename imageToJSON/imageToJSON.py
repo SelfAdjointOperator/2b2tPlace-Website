@@ -47,8 +47,8 @@ def pixelsToColourIdJSON(im_size, pixels):
             )
     return colourIdJSON
 
-colours_natural = loadJSON("../colourIdGeneration/colours_natural.json")
-colourHexLookup = loadJSON("../colourIdGeneration/colourHexLookup.json")
+colours_natural = loadJSON("./colours_natural.json")
+colourHexLookup = loadJSON("./colourHexLookup.json")
 
 if __name__ == "__main__":
     im = Image.open("./map_24360.png")
