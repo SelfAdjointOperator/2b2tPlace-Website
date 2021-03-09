@@ -27,6 +27,10 @@ app.secret_key = GLOBAL_CONFIG["secretKey_App"]
 def page_not_found(e):
     return render_template("404.html"), 404
 
+@app.context_processor
+def inject_DiscordURL():
+    return dict(discordInviteURL = GLOBAL_CONFIG["discordInviteURL"])
+
 db.init_app(app)
 with app.app_context():
     db.create_all()
