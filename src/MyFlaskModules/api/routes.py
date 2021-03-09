@@ -60,7 +60,7 @@ def pixels():
         "x": pixel.x,
         "y": pixel.y,
         "colourId": pixel.colourId,
-        "activityCount": pixel.activityCount
+        "pixelActivityTotal": pixel.pixelActivityTotal
     } for pixel in Pixel.query.all()]
     return json.dumps(pixels_JSON)
 
