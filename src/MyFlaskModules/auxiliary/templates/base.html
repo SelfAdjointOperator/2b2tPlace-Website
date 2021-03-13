@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% block cssSheets %}
-        <link rel="stylesheet" href="{{url_for('root.static',filename='styles/base.css')}}">
+        <link rel="stylesheet" href="{{url_for('auxiliary.static',filename='styles/base.css')}}">
     {% endblock %}
     {% block scripts %}
-        <script src="{{url_for('root.static',filename='js/base.js')}}"></script>
+        <script src="{{url_for('auxiliary.static',filename='js/base.js')}}"></script>
     {% endblock %}
     <title>{% block title %}{% endblock %}</title>
     <link rel="icon" type="icon" href="{{url_for('root.static',filename='images/favicon.ico')}}" />

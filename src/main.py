@@ -15,6 +15,9 @@ app = Flask(__name__)
 from MyFlaskModules.root.routes import bp as bp_root
 app.register_blueprint(bp_root)
 
+from MyFlaskModules.auxiliary.routes import bp as bp_auxiliary
+app.register_blueprint(bp_auxiliary)
+
 from MyFlaskModules.api.routes import bp as bp_api
 app.register_blueprint(bp_api)
 from MyFlaskModules.api.models import db, initialiseDatabaseIfNecessary, initialiseFromMapJSON
@@ -22,10 +25,6 @@ from MyFlaskModules.api.models import db, initialiseDatabaseIfNecessary, initial
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///{}".format(GLOBAL_CONFIG["databaseURI"])
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.secret_key = GLOBAL_CONFIG["secretKey_App"]
-
-@app.errorhandler(404)
-def page_not_found(e):
-    return render_template("404.html"), 404
 
 @app.context_processor
 def inject_DiscordURL():
