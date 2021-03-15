@@ -1,0 +1,18 @@
+.tabAbout {
+    flex: 1;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#nav * {
+    margin: 0.3rem;
+}

@@ -13,8 +13,7 @@ __pycache__/
 /colourIdGeneration/colours.json
 
 /src/MyFlaskModules/root/static/js
-/src/MyFlaskModules/root/static/styles
-/src/MyFlaskModules/root/static/asset-manifest.json
+/src/MyFlaskModules/root/static/css
 /src/MyFlaskModules/root/templates/root/index.html
 
 /src_react/build

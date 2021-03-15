@@ -1,0 +1,20 @@
+.sidebar {
+    width: 18em;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    text-align-last: center;
+    color: white;
+    background-color: #333;
+    padding: 0.3em;
+    border-right: 0.1rem solid var(--foregroundWhite);
+}
+
+.titleText {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: lighter;
+}
