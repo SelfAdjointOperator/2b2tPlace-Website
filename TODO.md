@@ -1,6 +1,4 @@
 - Implement colour selection
 - Setup.py possibly, though I can never get it to install the right module versions in the right order
-- POST API route for submission
-- React documentation / build file, update colourIdGeneration README
-- Check usage of colourIdLookup.json and colours.json incase refactoring broke a dependency
-- Add build shell script
+- React documentation
+- API documentation

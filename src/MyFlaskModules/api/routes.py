@@ -65,6 +65,16 @@ def pixels():
     } for pixel in Pixel.query.all()]
     return json.dumps(pixels_JSON)
 
+@bp.route("/users.json")
+def users():
+    """Fetch current state of all users"""
+    users_JSON = [{
+        "discordUUID": user.discordUUID,
+        "discordTag": user.discordTag,
+        "userActivityTotal": user.userActivityTotal
+    } for user in User.query.all()]
+    return json.dumps(users_JSON)
+
 @bp.route("/history.json")
 def history():
     """Fetch history about a range of space or time, or history from a user
