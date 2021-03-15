@@ -11,3 +11,12 @@ __pycache__/
 /colourIdGeneration/colourIdLookup.json
 /colourIdGeneration/colours_natural.json
 /colourIdGeneration/colours.json
+
+/src/MyFlaskModules/root/static/js
+/src/MyFlaskModules/root/static/styles
+/src/MyFlaskModules/root/static/asset-manifest.json
+/src/MyFlaskModules/root/templates/root/index.html
+
+/src_react/build
+/src_react/node_modules
+/src_react/package-lock.json

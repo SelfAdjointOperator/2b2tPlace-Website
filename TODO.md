@@ -3,3 +3,4 @@
 - POST API route for submission
 - React documentation / build file, update colourIdGeneration README
 - Check usage of colourIdLookup.json and colours.json incase refactoring broke a dependency
+- Add build shell script
