@@ -129,6 +129,48 @@ class Map extends Component {
     }.bind(this);
   };
 
+  getPixelColourFromPixels(x, y) {
+    let colour;
+    this.state.pixels.forEach((pixel) => {
+      if (parseInt(pixel["x"]) === x && parseInt(pixel["y"]) === y) {
+        let colourId = pixel["colourId"];
+        let colourIdInfo = this.state.colourIdLookupJSON[colourId];
+        colour = this.state.coloursJSON[colourIdInfo["colourSetNumber"]][
+          "tones"
+        ][colourIdInfo["tone"]];
+      }
+    });
+    return colour;
+  }
+
+  getRandomColor() {
+    let letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
+  flashPixel(x, y) {
+    window.requestAnimationFrame(() => this.flashPixelLoop(x, y));
+  }
+
+  flashPixelLoop(x, y) {
+    const canvas = this.refs.canvas;
+    const ctx = canvas.getContext("2d");
+    ctx.imageSmoothingEnabled = false;
+    if (this.props.activePixel.x !== x || this.props.activePixel.y !== y) {
+      ctx.fillStyle = this.getPixelColourFromPixels(x, y);
+      ctx.fillRect(parseInt(x) + 6, parseInt(y) + 6, 1, 1);
+      return;
+    } else {
+      ctx.fillStyle = this.getRandomColor();
+      ctx.fillRect(parseInt(x) + 6, parseInt(y) + 6, 1, 1);
+      window.requestAnimationFrame(() => this.flashPixelLoop(x, y));
+    }
+  }
+
   handleCanvasClick = (event) => {
     const containerRect = this.refs.mapContainer.getBoundingClientRect();
     const mapRect = this.refs.canvas.getBoundingClientRect();
@@ -151,11 +193,12 @@ class Map extends Component {
     if (x >= 6 && x < 134 && y >= 6 && y < 134) {
       const actualX = x - 6;
       const actualY = y - 6;
-      alert("x: " + actualX + " y: " + actualY);
+      this.props.onPixelClicked(actualX, actualY);
     }
   };
 
   render() {
+    this.flashPixel(this.props.activePixel.x, this.props.activePixel.y);
     return (
       <div className="mapContainer" ref="mapContainer">
         <canvas
@@ -163,7 +206,7 @@ class Map extends Component {
           width="140"
           height="140"
           ref="canvas"
-          onMouseDown={this.handleCanvasClick}
+          onClick={this.handleCanvasClick}
         />
       </div>
     );

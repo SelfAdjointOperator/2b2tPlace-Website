@@ -1,0 +1,25 @@
+#formSubmit {
+    display: flex;
+    flex-direction: column;
+}
+
+#formSubmit div {
+    display: flex;
+    flex-direction: row;
+}
+
+#formSubmit div select {
+    flex: 1;
+}
+
+#fsp_anonymise {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+}
+
+#fsp_anonymise li{
+    list-style-type: none;
+  }
