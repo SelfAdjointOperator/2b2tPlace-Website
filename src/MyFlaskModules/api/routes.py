@@ -140,6 +140,7 @@ def addCookie(cookieId):
         return render_template("api/cookieUnknown.html")
 
     db_user = db_token.user
+    session.permanent = True
     session["discordUUIDSigned"] = str(db_user.discordUUID)
     db.session.delete(db_token)
     db.session.commit()
