@@ -12,11 +12,11 @@ class TabAbout extends Component {
         <p>
           Get started by joining the{" "}
           <a
-            href="https://discord.gg/"
+            href="https://discord.gg/HgWN6tJ8zv"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Discord (TODO ADD URL)
+            Discord
           </a>
         </p>
         <p>
