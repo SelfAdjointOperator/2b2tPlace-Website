@@ -9,6 +9,7 @@ class TabHistory extends Component {
     return (
       <div className="tabHistory">
         <h2>History</h2>
+        <p>Coming Soon...</p>
       </div>
     );
   }

@@ -2,4 +2,5 @@
 - Setup.py possibly, though I can never get it to install the right module versions in the right order
 - React documentation
 - API documentation
-- Pixel tab pictures
+- History and leaderboards tabs
+- Colour shades

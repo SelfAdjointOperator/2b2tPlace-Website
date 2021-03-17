@@ -9,6 +9,7 @@ class TabLeaderboards extends Component {
     return (
       <div className="tabHistory">
         <h2>Leaderboards</h2>
+        <p>Coming Soon...</p>
       </div>
     );
   }
