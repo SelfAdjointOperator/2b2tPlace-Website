@@ -1,15 +1,18 @@
 .tabAbout {
     flex: 1;
-    font-weight: lighter;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
+    padding: 0.3em;
+
+    font-weight: lighter;
 }
 
 #nav {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
 }
 

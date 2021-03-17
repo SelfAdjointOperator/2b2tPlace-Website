@@ -1,15 +1,15 @@
 .sidebar {
-    width: 18em;
+    width: 32em;
     max-width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+
     text-align: justify;
     text-align-last: center;
     color: white;
     background-color: #333;
-    padding: 0.3em;
     border-right: 0.1rem solid var(--foregroundWhite);
 }
 

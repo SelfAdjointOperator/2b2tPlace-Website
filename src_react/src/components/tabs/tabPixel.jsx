@@ -5,22 +5,29 @@ import "./tabPixel.css";
 import FormSubmit from "./formSubmit";
 
 class TabPixel extends Component {
-  handleFormSubmitChange_X = (x) => {
-    this.props.onFormSubmitChange_X(x)
-  }
-
-  handleFormSubmitChange_Y = (y) => {
-    this.props.onFormSubmitChange_Y(y)
-  }
-
   render() {
+    const {
+      activePixel,
+      onFormSubmitChange_X,
+      onFormSubmitChange_Y,
+      allJSONsLoaded,
+      coloursJSON,
+      colourIdLookupJSON,
+      onFormError,
+      onBlockChange,
+    } = this.props;
     return (
       <div className="tabPixel">
-        <h2>Pixel</h2>
+        <h2>Edit a pixel, click the map!</h2>
         <FormSubmit
-          activePixel={this.props.activePixel}
-          onFormSubmitChange_X={this.handleFormSubmitChange_X}
-          onFormSubmitChange_Y={this.handleFormSubmitChange_Y}
+          activePixel={activePixel}
+          onFormSubmitChange_X={onFormSubmitChange_X}
+          onFormSubmitChange_Y={onFormSubmitChange_Y}
+          allJSONsLoaded={allJSONsLoaded}
+          coloursJSON={coloursJSON}
+          colourIdLookupJSON={colourIdLookupJSON}
+          onFormError={onFormError}
+          onBlockChange={onBlockChange}
         ></FormSubmit>
       </div>
     );

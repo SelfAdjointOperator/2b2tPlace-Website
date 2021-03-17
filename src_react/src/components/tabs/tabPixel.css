@@ -1,8 +1,12 @@
 .tabPixel {
     flex: 1;
-    font-weight: lighter;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
+
+    font-weight: lighter;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }

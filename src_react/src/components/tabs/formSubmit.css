@@ -1,9 +1,12 @@
-#formSubmit {
+#restOfForm {
+    padding: 0.3rem;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
 }
 
-#formSubmit div {
+#restOfForm #xDiv,
+#restOfForm #yDiv {
     display: flex;
     flex-direction: row;
 }
@@ -23,3 +26,47 @@
 #fsp_anonymise li{
     list-style-type: none;
   }
+
+.colourSetDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 0.3rem;
+}
+
+.formTextureImage {
+    width: 384px;
+}
+
+.radioLabel input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radioLabel input[type=radio] + img {
+    cursor: pointer;
+}
+
+.radioLabel input[type=radio]:checked + img {
+    filter: brightness(1.2);
+}
+
+.formTextureImageContainer {
+    overflow:hidden;
+    width: 32px;
+    height: 32px;
+
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+
+    transition: transform .2s;
+}
+
+.formTextureImageContainer:hover {
+    transform: scale(2);
+}

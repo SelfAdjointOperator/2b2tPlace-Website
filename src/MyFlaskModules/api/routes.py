@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, url_for, request, abort, flash
+from flask import Blueprint, render_template, url_for, request, abort
 from sqlalchemy import and_
 from time import time
 import random
@@ -136,20 +136,18 @@ def history():
 def submit():
     form = Form_SubmitPixel(request.form)
     if form is None:
-        flash("Error: No form detected in POST request", "error")
-        return abort(400)
+        return json.dumps({"error": "No form detected in POST request"}), 400
     if not form.validate():
+        abortJSON = {"error": []}
         for field in form.errors:
             for error in form.errors[field]:
-                print(error)
-                flash("Error: {}".format(error), "error")
-        return abort(400)
+                abortJSON["error"].append(str(error))
+        return json.dumps(abortJSON), 400
 
     form_auth_token_data = (form.fsp_auth_token.data).upper()
 
     if (db_token := ActiveToken.query.filter_by(tokenValue = form_auth_token_data).first()) is None:
-        flash("Error: Token not recognised", "error")
-        abort(401)
+        json.dumps({"error": "Token not recognised"}), 401
 
     form_coordinate_x = int(form.fsp_coordinate_x.data)
     form_coordinate_y = int(form.fsp_coordinate_y.data)
@@ -192,6 +190,5 @@ def submit():
     db.session.add(newPixelHistory)
     db.session.delete(db_token)
     db.session.commit()
-    flash("Pixel updated!", "info")
 
     return json.dumps({"success": "success"}), 200

@@ -1,122 +1,35 @@
 import React, { Component } from "react";
 
 import "./map.css";
+import E_pixelState from "./E_pixelState";
 
 class Map extends Component {
-  state = {
-    coloursJSON: null,
-    colourIdLookupJSON: null,
-    pixels: null,
-  };
+  mapDrawn = false;
 
-  ongoingFetches = [];
-
-  componentDidMount() {
-    this.fetchColours();
-    this.fetchColourIdLookup();
-    this.fetchCurrentPixels();
-  }
-
-  fetchColours() {
-    this.handleFetchStart("colours");
-    fetch("/root/static/json/colours.json")
-      .then(function (response) {
-        if (response.ok) {
-          return response.json();
-        } else {
-          return Promise.reject({
-            // what is this TODO
-            status: response.status,
-            statusText: response.statusText,
-          });
-        }
-      })
-      .then(
-        function (data) {
-          this.setState({ coloursJSON: data });
-          this.handleFetchComplete("colours");
-        }.bind(this)
-      )
-      .catch(function (error) {
-        console.log("error", error);
-      });
-  }
-
-  fetchColourIdLookup() {
-    this.handleFetchStart("colourIdLookup");
-    fetch("/root/static/json/colourIdLookup.json")
-      .then(function (response) {
-        if (response.ok) {
-          return response.json();
-        } else {
-          return Promise.reject({
-            // what is this TODO
-            status: response.status,
-            statusText: response.statusText,
-          });
-        }
-      })
-      .then(
-        function (data) {
-          this.setState({ colourIdLookupJSON: data });
-          this.handleFetchComplete("colourIdLookup");
-        }.bind(this)
-      )
-      .catch(function (error) {
-        console.log("error", error);
-      });
-  }
-
-  fetchCurrentPixels() {
-    this.handleFetchStart("currentPixels");
-    fetch("/api/pixels.json")
-      .then(function (response) {
-        if (response.ok) {
-          return response.json();
-        } else {
-          return Promise.reject({
-            // what is this TODO
-            status: response.status,
-            statusText: response.statusText,
-          });
-        }
-      })
-      .then(
-        function (data) {
-          this.setState({ pixels: data });
-          this.handleFetchComplete("currentPixels");
-        }.bind(this)
-      )
-      .catch(function (error) {
-        console.log("error", error);
-      });
-  }
-
-  handleFetchStart = (fetchName) => {
-    this.ongoingFetches = this.ongoingFetches.concat([fetchName]);
-  };
-
-  handleFetchComplete = (fetchName) => {
-    this.ongoingFetches.splice(this.ongoingFetches.indexOf(fetchName), 1);
-    if (this.ongoingFetches.length === 0) {
-      this.drawCanvasPixels();
-    }
-  };
+  // PROPS
+  // allJSONsLoaded
+  // coloursJSON
+  // colourIdLookupJSON
+  // pixels
+  // activePixel
+  // activePixelState
+  // activePixelPotentialColour
+  // onPixelClicked
 
   drawCanvasPixels = () => {
     const canvas = this.refs.canvas;
     const ctx = canvas.getContext("2d");
     ctx.imageSmoothingEnabled = false;
     var img = new window.Image();
-    img.addEventListener("load", function () {
+    img.addEventListener("load", () => {
       canvas.getContext("2d").drawImage(img, 0, 0, 140, 140);
     });
     img.setAttribute("src", "/root/static/images/map_background.png");
-    img.onload = function () {
-      this.state.pixels.forEach(function (element) {
+    img.onload = () => {
+      this.props.pixels.forEach((element) => {
         let colourId = element["colourId"];
-        let colourIdInfo = this.state.colourIdLookupJSON[colourId];
-        ctx.fillStyle = this.state.coloursJSON[colourIdInfo["colourSetNumber"]][
+        let colourIdInfo = this.props.colourIdLookupJSON[colourId];
+        ctx.fillStyle = this.props.coloursJSON[colourIdInfo["colourSetNumber"]][
           "tones"
         ][colourIdInfo["tone"]];
         ctx.fillRect(
@@ -125,17 +38,17 @@ class Map extends Component {
           1,
           1
         );
-      }, this);
-    }.bind(this);
+      });
+    };
   };
 
   getPixelColourFromPixels(x, y) {
     let colour;
-    this.state.pixels.forEach((pixel) => {
+    this.props.pixels.forEach((pixel) => {
       if (parseInt(pixel["x"]) === x && parseInt(pixel["y"]) === y) {
         let colourId = pixel["colourId"];
-        let colourIdInfo = this.state.colourIdLookupJSON[colourId];
-        colour = this.state.coloursJSON[colourIdInfo["colourSetNumber"]][
+        let colourIdInfo = this.props.colourIdLookupJSON[colourId];
+        colour = this.props.coloursJSON[colourIdInfo["colourSetNumber"]][
           "tones"
         ][colourIdInfo["tone"]];
       }
@@ -152,31 +65,55 @@ class Map extends Component {
     return color;
   }
 
-  flashPixel(x, y) {
-    window.requestAnimationFrame(() => this.flashPixelLoop(x, y));
+  colourFromColourSetNumberAndBlockNumber(colourSetNumber, blockNumber) {
+    return this.props.coloursJSON[colourSetNumber.toString()]["tones"][
+      "normal"
+    ];
   }
 
-  flashPixelLoop(x, y) {
+  plotPixel(x, y, colour) {
     const canvas = this.refs.canvas;
     const ctx = canvas.getContext("2d");
     ctx.imageSmoothingEnabled = false;
-    if (this.props.activePixel.x !== x || this.props.activePixel.y !== y) {
-      ctx.fillStyle = this.getPixelColourFromPixels(x, y);
-      ctx.fillRect(parseInt(x) + 6, parseInt(y) + 6, 1, 1);
+    ctx.fillStyle = colour;
+    ctx.fillRect(parseInt(x) + 6, parseInt(y) + 6, 1, 1);
+  }
+
+  rePlotOriginalPixel(x, y) {
+    let colour = this.getPixelColourFromPixels(x, y);
+    this.plotPixel(x, y, colour);
+  }
+
+  flashPixelLoop(x, y) {
+    try {
+      if (
+        this.props.activePixelState !== E_pixelState.FLASHING ||
+        this.props.activePixel.x !== x ||
+        this.props.activePixel.y !== y
+      ) {
+        this.rePlotOriginalPixel(x, y);
+        return;
+      } else {
+        this.plotPixel(x, y, this.getRandomColor());
+        window.requestAnimationFrame(() => this.flashPixelLoop(x, y));
+      }
+    } catch (error) {
+      console.log(error);
       return;
-    } else {
-      ctx.fillStyle = this.getRandomColor();
-      ctx.fillRect(parseInt(x) + 6, parseInt(y) + 6, 1, 1);
-      window.requestAnimationFrame(() => this.flashPixelLoop(x, y));
     }
   }
 
   handleCanvasClick = (event) => {
+    // function to ignore canvas clicks if map not plotted yet
+    // and to work out the map X and Y coords clicked
+    if (!this.mapDrawn) {
+      return;
+    }
     const containerRect = this.refs.mapContainer.getBoundingClientRect();
     const mapRect = this.refs.canvas.getBoundingClientRect();
     const pixelSize = mapRect.width / 140;
     const x = Math.floor((event.clientX - mapRect.left) / pixelSize);
-    let y = 0;
+    let y;
     if (containerRect.height < containerRect.width) {
       y = Math.floor((event.clientY - mapRect.top) / pixelSize);
     } else if (
@@ -190,15 +127,60 @@ class Map extends Component {
     } else {
       y = 0;
     }
-    if (x >= 6 && x < 134 && y >= 6 && y < 134) {
-      const actualX = x - 6;
-      const actualY = y - 6;
-      this.props.onPixelClicked(actualX, actualY);
+    const actualX = x - 6;
+    const actualY = y - 6;
+    if (0 <= actualX && actualX < 128 && 0 <= actualY && actualY < 128) {
+      this.handleCanvasClickProper(actualX, actualY);
+    }
+  };
+
+  handleCanvasClickProper = (x, y) => {
+    this.props.onPixelClicked(x, y);
+  };
+
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    if (prevProps.activePixel.x !== null) {
+      this.rePlotOriginalPixel(
+        prevProps.activePixel.x,
+        prevProps.activePixel.y
+      );
+    }
+    return null;
+  }
+
+  componentDidUpdate = () => {
+    if (this.mapDrawn) {
+      switch (this.props.activePixelState) {
+        case E_pixelState.FLASHING:
+          window.requestAnimationFrame(() =>
+            this.flashPixelLoop(
+              this.props.activePixel.x,
+              this.props.activePixel.y
+            )
+          );
+          break;
+        case E_pixelState.POTENTIALCOLOUR:
+          window.requestAnimationFrame(() =>
+            this.plotPixel(
+              this.props.activePixel.x,
+              this.props.activePixel.y,
+              this.colourFromColourSetNumberAndBlockNumber(
+                this.props.activePixelPotentialColour.colourSetNumber,
+                this.props.activePixelPotentialColour.blockNumber
+              )
+            )
+          );
+          break;
+        default:
+          break;
+      }
+    } else if (this.props.allJSONsLoaded) {
+      this.drawCanvasPixels();
+      this.mapDrawn = true;
     }
   };
 
   render() {
-    this.flashPixel(this.props.activePixel.x, this.props.activePixel.y);
     return (
       <div className="mapContainer" ref="mapContainer">
         <canvas

@@ -4,7 +4,7 @@ import "./mapToolbar.css";
 
 class MapToolbar extends Component {
   handleTabTitleClick = (tabId) => {
-    this.props.onTabChange(tabId);
+    this.props.onTabClick(tabId);
   };
 
   render() {

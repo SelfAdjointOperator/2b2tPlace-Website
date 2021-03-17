@@ -12,10 +12,6 @@ html, body {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
     overflow: hidden;
 
     color: var(--foregroundWhite);
@@ -44,9 +40,35 @@ a, a:visited {
 }
 
 #root {
-    flex: 1;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: stretch;
     align-items: stretch;
+}
+
+#flashDiv {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F880;
+}
+
+#flashDivInner {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--foregroundBlack);
+    background-color: var(--foregroundWhite);
+    margin: 0.3rem;
+    outline: solid 0.1rem var(--foregroundBlack);
+}
+
+#flashDivInner * {
+    padding: 0.3rem;
 }
