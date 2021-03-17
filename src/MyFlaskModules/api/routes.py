@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, url_for, request, abort
+from flask import Blueprint, render_template, url_for, request, abort, session
 from sqlalchemy import and_
 from time import time
 import random
@@ -43,16 +43,13 @@ def admin_token():
     elif user_byUUID.discordTag != discordTag:
         user_byUUID.discordTag = discordTag
         db.session.commit()
-    timestamp = int(time())
     if (user_token := user_byUUID.activeToken):
         return json.dumps({"token": user_token.tokenValue})
-    elif ((user_lastSubmitTime := user_byUUID.lastSubmitTime) is None) or ((timestamp - int(user_lastSubmitTime)) >= MODULE_CONFIG["timeBetweenSubmissions"]):
+    else:
         newTokenValue = ("%0{}x".format(MODULE_CONFIG["tokenLength"]) % random.randrange(16 ** MODULE_CONFIG["tokenLength"])).upper()
         user_byUUID.activeToken = ActiveToken(tokenValue = newTokenValue)
         db.session.commit()
         return json.dumps({"token": newTokenValue})
-    else:
-        return json.dumps({"nextTimeAllowed": str(MODULE_CONFIG["timeBetweenSubmissions"] + int(user_lastSubmitTime))})
 
 @bp.route("/pixels.json")
 def pixels():
@@ -132,8 +129,41 @@ def history():
     } for historyEntry in historyEntries]
     return json.dumps(returnJSON)
 
+@bp.route("/addCookie_<cookieId>")
+def addCookie(cookieId):
+    try:
+        cookieId = str(cookieId)
+    except:
+        return abort(400)
+
+    if (db_token := ActiveToken.query.filter_by(tokenValue = cookieId).first()) is None:
+        return render_template("api/cookieUnknown.html")
+
+    db_user = db_token.user
+    session["discordUUIDSigned"] = str(db_user.discordUUID)
+    db.session.delete(db_token)
+    db.session.commit()
+
+    return render_template("api/cookieSuccess.html")
+
 @bp.route("/submit.json", methods = ["POST"])
 def submit():
+    discordUUID = session.get("discordUUIDSigned")
+    if discordUUID is None:
+        return json.dumps({"error": "No valid cookie, get one via the Discord bot"}), 401
+    try:
+        discordUUID = str(discordUUID)
+    except:
+        return json.dumps({"error": "Malformed cookie. Get a new one from the Discord bot"}), 400
+
+    db_user = User.query.filter_by(discordUUID = discordUUID).first()
+    if db_user is None:
+        return json.dumps({"error": "User missing from database?!"}), 404
+
+    timestamp = int(time())
+    if ((user_lastSubmitTime := db_user.lastSubmitTime) is not None) and ((timestamp - int(user_lastSubmitTime)) <= MODULE_CONFIG["timeBetweenSubmissions"]):
+        return json.dumps({"error": "Error: Next time allowed: {} seconds".format(str(MODULE_CONFIG["timeBetweenSubmissions"] - (timestamp - int(user_lastSubmitTime))))})
+
     form = Form_SubmitPixel(request.form)
     if form is None:
         return json.dumps({"error": "No form detected in POST request"}), 400
@@ -144,18 +174,12 @@ def submit():
                 abortJSON["error"].append(str(error))
         return json.dumps(abortJSON), 400
 
-    form_auth_token_data = (form.fsp_auth_token.data).upper()
-
-    if (db_token := ActiveToken.query.filter_by(tokenValue = form_auth_token_data).first()) is None:
-        json.dumps({"error": "Token not recognised"}), 401
-
     form_coordinate_x = int(form.fsp_coordinate_x.data)
     form_coordinate_y = int(form.fsp_coordinate_y.data)
     form_anonymise = form.fsp_anonymise.data
     form_colourId = int(form.fsp_colourId.data)
     timestamp = int(time())
 
-    db_user = db_token.user
     db_pixel = Pixel.query.filter_by(x = form_coordinate_x, y = form_coordinate_y).first()
 
     newPixelHistory_pixelId = db_pixel.id
@@ -188,7 +212,6 @@ def submit():
     )
 
     db.session.add(newPixelHistory)
-    db.session.delete(db_token)
     db.session.commit()
 
-    return json.dumps({"success": "success"}), 200
+    return json.dumps({"success": "Success!"}), 200

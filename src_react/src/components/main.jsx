@@ -154,6 +154,7 @@ class Main extends Component {
   };
 
   onFormError = (e) => {
+    // includes all messages, todo rename as flash instead of error
     let newFlashMessages = [];
     for (let key in e) {
       newFlashMessages.push(e[key]);

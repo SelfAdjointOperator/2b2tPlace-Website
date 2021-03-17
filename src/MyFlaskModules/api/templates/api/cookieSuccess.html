@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block cssSheets %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('.static',filename='styles/cookieSuccess.css')}}">
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+{% endblock %}
+
+{% block title %}
+    2b2t.Place - Cookie Success
+{% endblock %}
+
+{% block mainDivContent %}
+    <p>Success!</p>
+    <p><a href="/">Click here</a> to go back to the main page</p>
+{% endblock %}

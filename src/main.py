@@ -24,6 +24,7 @@ from MyFlaskModules.api.models import db, initialiseDatabaseIfNecessary, initial
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///{}".format(GLOBAL_CONFIG["databaseURI"])
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+app.config["PERMANENT_SESSION_LIFETIME"] = 864000000 # 10,000 days
 app.secret_key = GLOBAL_CONFIG["secretKey_App"]
 
 @app.context_processor

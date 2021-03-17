@@ -21,6 +21,7 @@ class FormSubmit extends Component {
     fetch("/api/submit.json", {
       method: "POST",
       body: data,
+      credentials: "include",
     })
       .then(
         (response) => {
@@ -139,13 +140,6 @@ class FormSubmit extends Component {
       <form onSubmit={this.handleSubmit} id="formSubmit">
         <div id="formColours">{formColours}</div>
         <div id="restOfForm">
-          <input
-            id="fsp_auth_token"
-            name="fsp_auth_token"
-            placeholder="Token"
-            required
-            type="text"
-          />
           <div id="xDiv">
             X:
             <select

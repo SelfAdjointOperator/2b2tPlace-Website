@@ -8,12 +8,6 @@ with open("./src/MyFlaskModules/api/resources/colourIdLookup.json") as f:
     colourIdLookupJSON = json.load(f)
 
 class Form_SubmitPixel(Form):
-    fsp_auth_token = StringField(validators = [
-        validators.InputRequired(message = "Please enter a token, obtained in the Discord"),
-        validators.Length(message = "Token has length {}".format(MODULE_CONFIG["tokenLength"]), min = MODULE_CONFIG["tokenLength"], max = MODULE_CONFIG["tokenLength"]),
-        validators.Regexp("^[0-9a-fA-F]+$", message = "Token is a hex string")],
-        render_kw = {"placeholder": "Token"}
-    )
     fsp_coordinate_x = SelectField(validators = [
         validators.InputRequired(message = "Please specify x coordinate"),
         validators.AnyOf([str(i) for i in range(128)], message = "x coordinate must be in the range 0 to 127")],
